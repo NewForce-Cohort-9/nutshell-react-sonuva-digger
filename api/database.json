@@ -1,15 +1,15 @@
 {
   "users": [
-      { "id": 1, "username": "Ryan", "email": "ryananderson@sonuva.com" },
-      { "id": 2, "username": "Bob", "email": "bob@messageme.com" },
-      { "id": 3, "username": "Charlie", "email": "charlie@charliesemail.com" },
-      { "id": 4, "username": "Daisy", "email": "daisy@flowers.com" },
-      { "id": 5, "username": "Eve", "email": "eve@adam.com" },
-      { "id": 6, "username": "Frank", "email": "frank@ballpark.com" },
-      { "id": 7, "username": "Grace", "email": "grace@saving.com" },
-      { "id": 8, "username": "Hank", "email": "hank@hill.com" },
-      { "id": 9, "username": "Ivy", "email": "ivy@poison.com" },
-      { "id": 10, "username": "Jack", "email": "jack@andthebeanstock.com" }
+    { "id": 1, "username": "Ryan", "bio": "", "avatar": "avatar1.jpg", "email": "ryananderson@sonuva.com", "created_at": "2020-06-04T12:34:56Z"},
+    { "id": 2, "username": "Bob", "email": "bob@messageme.com", "avatar": "avatar2.jpg", "created_at": "2020-07-04T12:34:56Z"},
+    { "id": 3, "username": "Charlie", "email": "charlie@charliesemail.com", "avatar": "avatar3.jpg", "created_at": "2020-08-04T12:34:56Z"},
+    { "id": 4, "username": "Daisy", "email": "daisy@flowers.com", "avatar": "avatar4.jpg", "created_at": "2020-09-04T12:34:56Z"},
+    { "id": 5, "username": "Eve", "email": "eve@adam.com", "avatar": "avatar5.jpg", "created_at": "2020-10-04T12:34:56Z"},
+    { "id": 6, "username": "Frank", "email": "frank@ballpark.com", "avatar": "avatar6.jpg", "created_at": "2020-11-04T12:34:56Z"},
+    { "id": 7, "username": "Grace", "email": "grace@saving.com", "avatar": "avatar7.jpg", "created_at": "2020-12-04T12:34:56Z"},
+    { "id": 8, "username": "Hank", "email": "hank@hill.com", "avatar": "avatar8.jpg", "created_at": "2021-01-04T12:34:56Z"},
+    { "id": 9, "username": "Ivy", "email": "ivy@poison.com", "avatar": "avatar9.jpg", "created_at": "2021-02-04T12:34:56Z"},
+    { "id": 10, "username": "Jack", "email": "jack@andthebeanstock.com", "avatar": "avatar10.jpg", "created_at": "2021-03-04T12:34:56Z"}
   ],
   "news": [
     {
@@ -77,12 +77,12 @@
     { "id": 8, "userId": 8, "eventDate": "October 10th, 2024", "location": "Raleigh, NC" }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage" },
-    { "id": 2, "userId": 5, "task": "Count to 1 million" },
-    { "id": 3, "userId": 7, "task": "Take a hike" },
-    { "id": 4, "userId": 3, "task": "Kick Rocks" },
-    { "id": 5, "userId": 9, "task": "Clear the Amazon Rain Forest" },
-    { "id": 6, "userId": 1, "task": "Clean the shingles" }
+    { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
+    { "id": 2, "userId": 5, "task": "Count to 1 million", "isComplete": true },
+    { "id": 3, "userId": 7, "task": "Take a hike", "isComplete": false },
+    { "id": 4, "userId": 3, "task": "Kick Rocks", "isComplete": true },
+    { "id": 5, "userId": 9, "task": "Clear the Amazon Rain Forest", "isComplete": false },
+    { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
   ],
   "images": [
     { "id": 1, "userId": 3, "url": "https://external-preview.redd.it/WsqYTm_RfCW4gg49uPVh-RY1CU9RmAVnKXPyRQmNM4U.jpg?width=1080&crop=smart&auto=webp&s=5b53d8fc05b6ef05de27e563bf360a196568bae5", "caption": "OMG look at that taco" },
