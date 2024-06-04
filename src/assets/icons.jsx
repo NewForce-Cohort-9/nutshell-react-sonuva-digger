@@ -83,7 +83,7 @@ export const ArrowIcon = ({ color, size, right }) => (
     height={size}
     fill={color ?? "currentColor"}
     viewBox="0 0 48 48"
-    className={right ? "rotate-180" : ""}
+    style={{ transform: right && "rotate(180deg)" }}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M0 0h48v48h-48z" fill="none" />
