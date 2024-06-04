@@ -7,14 +7,14 @@ export default function ApplicationViews() {
         path="/"
         element={
           <>
-            <span style={{ color: "white" }}>NAVBAR: Todo</span>
+            <span style={{ color: "black" }}>NAVBAR: Todo</span>
             <Outlet />
           </>
         }
       >
         <Route
           index
-          element={<span style={{ color: "white" }}>Splash page: TODO</span>}
+          element={<span style={{ color: "black" }}>Splash page: TODO</span>}
         />
         <Route path="news" element={<span>NEWS: TODO</span>}></Route>
         <Route path="events" element={<span>EVENTS: TODO </span>} />
