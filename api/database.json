@@ -49,11 +49,6 @@
       "id": 10,
       "username": "Jack",
       "email": "jack@andthebeanstock.com"
-    },
-    {
-      "username": "Jess",
-      "email": "jess@newforce.cohort",
-      "id": 11
     }
   ],
   "news": [
@@ -62,42 +57,48 @@
       "userId": 2,
       "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
       "title": "Wormholes Allow Information to Escape Black Holes",
-      "synopsis": "Check out this recent discovery about Wormholes"
+      "synopsis": "Check out this recent discovery about Wormholes",
+      "img": ""
     },
     {
       "id": 2,
       "userId": 10,
       "url": "https://www.quantamagazine.org/cryptographers-discover-a-new-foundation-for-quantum-secrecy-20240603/",
       "title": "Cryptographers Discover a New Foundation for Quantum Secrecy",
-      "synopsis": "Check out this recent discovery about Quantum Secrecy"
+      "synopsis": "Check out this recent discovery about Quantum Secrecy",
+      "img": ""
     },
     {
       "id": 3,
       "userId": 4,
       "url": "https://www.quantamagazine.org/what-happens-in-the-brain-to-cause-depression-20240523/",
       "title": "What Happens in the Brain to Cause Depression?",
-      "synopsis": "Check out this recent discovery about Depression"
+      "synopsis": "Check out this recent discovery about Depression",
+      "img": ""
     },
     {
       "id": 4,
       "userId": 2,
       "url": "https://www.quantamagazine.org/insects-and-other-animals-have-consciousness-experts-declare-20240419/",
       "title": "Insects and Other Animals Have Consciousness, Experts Declare",
-      "synopsis": "Check out this recent discovery about Insects"
+      "synopsis": "Check out this recent discovery about Insects",
+      "img": ""
     },
     {
       "id": 5,
       "userId": 3,
       "url": "https://www.quantamagazine.org/bats-use-the-same-brain-cells-to-map-physical-and-social-worlds-20231031/",
       "title": "Bats Use the Same Brain Cells to Map Physical and Social Worlds",
-      "synopsis": "Check out this recent discovery about Bats"
+      "synopsis": "Check out this recent discovery about Bats",
+      "img": ""
     },
     {
-      "id": 5,
+      "id": 6,
       "userId": 1,
       "url": "https://www.mavtv.com/athletes/ryan-anderson",
       "title": "Ryan Anderson: The Legacy of Son-Uva Digger",
-      "synopsis": "Check out this recent discovery about Ryan Anderson"
+      "synopsis": "Check out this recent discovery about Ryan Anderson",
+      "img": ""
     }
   ],
   "messages": [

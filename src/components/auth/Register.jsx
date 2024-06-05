@@ -1,4 +1,3 @@
-import "./Login.css";
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { createUser, getUserByEmail } from "../../services/userService"
@@ -96,7 +95,7 @@ export const Register = (props) => {
 // }
 
 return (
-  <main>
+  <main className="login">
     <Card
       className="my-2 text-center"
       color="light"
