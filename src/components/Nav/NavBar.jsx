@@ -43,6 +43,7 @@ function NavBar() {
             Live Chat
           </NavLink>
         </NavItem>
+        <div></div>
         <NavItem>
           <NavLink
             href="http://localhost:5173/profile"

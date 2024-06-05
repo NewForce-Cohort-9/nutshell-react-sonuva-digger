@@ -5,7 +5,6 @@ import ApplicationViews from "./views/ApplicationViews";
 import { Login } from "./components/auth/Login.jsx";
 import { Register } from "./components/auth/Register.jsx";
 import { Authorized } from "./views/Authorized.jsx";
-import Authorized from "./auth/Authorized.jsx";
 
 
 //TODO - wrap ApplicationViews with Authorized
