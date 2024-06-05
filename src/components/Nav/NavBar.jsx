@@ -2,8 +2,16 @@
 import React from 'react'
 import { Nav, NavItem, NavLink } from 'reactstrap'
 import './NavBar.css'
+import { useNavigate } from 'react-router-dom'
 
 function NavBar() {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    localStorage.removeItem('loggedInUser')
+      navigate('/login')
+    
+  }
 
   return (
     <div className="navbar-container">
@@ -50,6 +58,9 @@ function NavBar() {
           >
             Profile
           </NavLink>
+        </NavItem>
+        <NavItem>
+          <button onClick={handleLogout} className="logout-button">Logout</button>
         </NavItem>
       </Nav>
     </div>
