@@ -8,7 +8,7 @@ import "./Tasks.css";
 
 export default function TasksContainer({ currentUser }) {
   return (
-    <div>
+    <div className="tasks-container">
       <section className="tasks-section">
         <div className="tasks-section-inner">
           <div>

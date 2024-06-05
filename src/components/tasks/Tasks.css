@@ -1,12 +1,10 @@
-/* .tasks-container {
-  display: flex;
-  justify-content: center;
-  padding: 6rem;
-} */
+.tasks-container {
+  margin-top: 6rem;
+}
 
 .tasks-section {
   position: relative;
-  padding: 0 16px 100px;
+  /* padding: 0 16px 100px; */
   /* max-width: 672px; */
   max-width: 400px;
   margin: 0 auto;

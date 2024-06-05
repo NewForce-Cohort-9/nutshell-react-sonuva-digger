@@ -214,17 +214,77 @@
     }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
-    { "id": 2, "userId": 5, "task": "Count to 1 million", "isComplete": true },
-    { "id": 3, "userId": 7, "task": "Take a hike", "isComplete": false },
-    { "id": 4, "userId": 3, "task": "Kick Rocks", "isComplete": true },
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage",
+      "isComplete": false,
+      "completionDate": "2024-08-12T03:06:27.975Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "task": "Count to 1 million",
+      "isComplete": false,
+      "completionDate": "2024-08-13T03:06:27.975Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "task": "Take a hike",
+      "isComplete": false,
+      "completionDate": "2024-08-15T03:06:27.975Z"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "task": "Kick Rocks",
+      "isComplete": false,
+      "completionDate": "2024-08-20T03:06:27.975Z"
+    },
     {
       "id": 5,
       "userId": 9,
       "task": "Clear the Amazon Rain Forest",
       "isComplete": false
     },
-    { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
+    {
+      "id": 6,
+      "userId": 1,
+      "task": "Clean the shingles",
+      "isComplete": true
+    },
+    {
+      "task": "eat barbecue",
+      "completionDate": "2024-06-05T19:13:19.621Z",
+      "isComplete": false,
+      "id": 7
+    },
+    {
+      "task": "lool",
+      "completionDate": "2024-06-07",
+      "isComplete": false,
+      "id": 8
+    },
+    {
+      "task": "neww taskkk",
+      "completionDate": "2024-06-08",
+      "isComplete": false,
+      "id": 9
+    },
+    {
+      "task": "",
+      "completionDate": "2024-06-05T19:50:14.254Z",
+      "isComplete": false,
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "task": "salad",
+      "completionDate": "2024-06-15",
+      "isComplete": false,
+      "id": 11
+    }
   ],
   "images": [
     {

@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import NavBar from "../components/Nav/NavBar.jsx";
 import TasksContainer from "../components/tasks/TasksContainer.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
+
+  useEffect(() => {
+    const localUser = localStorage.getItem("loggedInUser");
+    setCurrentUser(JSON.parse(localUser));
+  }, []);
 
   return (
     <Routes>

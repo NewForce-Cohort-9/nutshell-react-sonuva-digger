@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Modal,
   Button,
@@ -7,6 +7,7 @@ import {
   ModalFooter,
   Input,
 } from "reactstrap";
+import { createTask } from "../../services/taskService";
 
 /*
  **Author: LJ White
@@ -19,26 +20,49 @@ export default function EditTask({
   activeTaskId,
   userTasks,
   setUserTasks,
+  currentUser,
 }) {
   const [taskName, setTaskName] = useState("");
   const [taskDate, setTaskDate] = useState(new Date());
 
   const isNewTask = activeTaskId === userTasks.length;
+  const existingTask = userTasks.find((task) => task.id === activeTaskId);
+
+  useEffect(() => {
+    if (!isNewTask) {
+      setTaskName(existingTask.task);
+      setTaskDate(existingTask.completionDate);
+    }
+  }, []);
 
   const handleTaskNameChange = (e) => {
     setTaskName(e.target.value);
   };
 
+  const handleTaskDateChange = (e) => {
+    console.log("e", e.target.value);
+  };
+
   const addNewTask = async () => {
     const newTask = {
-      id: activeTaskId,
+      userId: currentUser.id,
       task: taskName,
-      completionDate: taskDate,
+      completionDate: taskDate ?? new Date(),
+      isComplete: false,
     };
-    const newTasks = [newTask, ...userTasks];
+    await createTask(newTask);
 
+    const newTasks = [...userTasks, newTask].map((obj, index) => ({
+      ...obj,
+      id: index,
+    }));
+
+    setUserTasks(newTasks);
     toggle();
-    console.log("new", newTasks);
+  };
+
+  const editTask = async () => {
+    //TODO
   };
 
   return (
@@ -50,11 +74,15 @@ export default function EditTask({
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
           <div>
             {isNewTask ? "Enter a task" : "Edit your task"}
-            <Input onChange={handleTaskNameChange} />
+            <Input value={taskName} onChange={handleTaskNameChange} />
           </div>
           <div>
             {isNewTask ? "Enter a completion date" : "Edit completion date"}
-            <input type="date" />
+            <input
+              value={taskDate}
+              type="date"
+              onChange={handleTaskDateChange}
+            />
           </div>
         </div>
       </ModalBody>
@@ -62,14 +90,10 @@ export default function EditTask({
         <Button color="secondary" onClick={toggle}>
           Cancel
         </Button>
-        <Button
-          color="primary"
-          onClick={isNewTask ? addNewTask : console.log("lol")}
-        >
+        <Button color="primary" onClick={isNewTask ? addNewTask : editTask}>
           {isNewTask ? "Add task" : "Edit task"}
-        </Button>{" "}
+        </Button>
       </ModalFooter>
     </Modal>
-    // <div>IS TASK: {task?.id}</div>
   );
 }

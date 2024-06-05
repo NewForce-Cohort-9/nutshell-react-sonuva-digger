@@ -1,17 +1,13 @@
-import { useState } from "react";
 import { ChecklistIcon, DateIcon, EditPencil } from "../../assets/icons";
-import { markTaskComplete } from "../../services/taskService";
 
 /*
  **Author: LJ White
  **Purpose: Provides a visual component for a task
  */
 
-export default function Task({ task, toggleEditTask }) {
-  const callMarkTaskComplete = async () => {
-    // await markTaskComplete(task);
-  };
+//TODO - unfinished
 
+export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
   return (
     <>
       <div style={{ position: "relative", paddingBottom: "1rem" }}>
@@ -22,10 +18,7 @@ export default function Task({ task, toggleEditTask }) {
                 <div className="task-border">
                   {/* <ArrowIcon size={16} /> */}
                 </div>
-                <div
-                  onClick={() => console.log("lol")}
-                  className="task-content"
-                >
+                <div className="task-content">
                   <div className="task-inner-row">
                     <div style={{ width: "100%", paddingRight: "0.75rem" }}>
                       <div>
@@ -58,12 +51,12 @@ export default function Task({ task, toggleEditTask }) {
                         <input
                           type="checkbox"
                           name="completed"
-                          checked={task.isCompleted ? true : false}
-                          onChange={callMarkTaskComplete}
+                          checked={task.isComplete ? true : false}
+                          onChange={() => callMarkTaskComplete(task)}
                         />
                         <div
                           style={{
-                            backgroundColor: task.isCompleted
+                            backgroundColor: task.isComplete
                               ? "#16a34a"
                               : "#64748b",
                           }}
@@ -71,7 +64,7 @@ export default function Task({ task, toggleEditTask }) {
                           <span
                             style={{
                               transform:
-                                task.isCompleted && "translateX(0.75rem)",
+                                task.isComplete && "translateX(0.75rem)",
                             }}
                           />
                         </div>
@@ -95,7 +88,7 @@ export default function Task({ task, toggleEditTask }) {
                                 textAlign: "center",
                               }}
                             >
-                              {task.completionDate.slice(0, 10)}
+                              {task.completionDate?.slice(0, 10)}
                             </span>
                           </span>
                         </button>

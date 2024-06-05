@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
-import { getAllTasksByUserId } from "../../services/taskService";
+import {
+  getAllUncompletedTasksByUserId,
+  updateTask,
+  getAllTasksByUserId,
+} from "../../services/taskService";
 import { Button } from "reactstrap";
 import Task from "./Task";
 import EditTask from "./EditTask";
@@ -16,22 +20,30 @@ export default function TasksList({ currentUser }) {
   const [isEditTaskOpen, setIsEditTaskOpen] = useState(false);
 
   useEffect(() => {
-    callGetAllTasks();
-  }, []);
+    if (currentUser.id) callGetAllUserTasks();
+  }, [currentUser.id]);
 
   const toggleEditTask = (taskId) => {
     setIsEditTaskOpen(!isEditTaskOpen);
     setActiveTaskId(taskId);
   };
 
-  const callGetAllTasks = async () => {
-    const allUserTasks = await getAllTasksByUserId(3); //replace with currentUser.id
-    setUserTasks(allUserTasks);
+  const callGetAllUserTasks = async () => {
+    const allUserUncompletedTasks = await getAllUncompletedTasksByUserId(
+      currentUser.id
+    );
+    setUserTasks(allUserUncompletedTasks);
   };
 
   const onNewTaskClick = () => {
     setIsEditTaskOpen(true);
     setActiveTaskId(userTasks.length);
+  };
+
+  const callMarkTaskComplete = async (task) => {
+    await updateTask({ ...task, isComplete: true });
+    const newTasks = userTasks.filter((item) => item.id !== task.id);
+    setUserTasks(newTasks);
   };
 
   return (
@@ -43,6 +55,7 @@ export default function TasksList({ currentUser }) {
           toggle={toggleEditTask}
           userTasks={userTasks}
           setUserTasks={setUserTasks}
+          currentUser={currentUser}
         />
       )}
 
@@ -53,7 +66,7 @@ export default function TasksList({ currentUser }) {
               key={task.id}
               task={task}
               toggleEditTask={toggleEditTask}
-              activeTaskId={activeTaskId}
+              callMarkTaskComplete={callMarkTaskComplete}
             />
           );
         })}
