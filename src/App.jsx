@@ -6,6 +6,7 @@ import { Login } from "./components/auth/Login.jsx";
 import { Register } from "./components/auth/Register.jsx";
 import { Authorized } from "./views/Authorized.jsx";
 
+
 //TODO - wrap ApplicationViews with Authorized
 
 function App() {

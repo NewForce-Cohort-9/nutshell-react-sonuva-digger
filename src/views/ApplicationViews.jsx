@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
-import TasksContainer from "../components/tasks/TasksContainer";
+import NavBar from "../components/Nav/NavBar.jsx";
+import TasksContainer from "../components/tasks/TasksContainer.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
@@ -11,7 +12,7 @@ export default function ApplicationViews() {
         path="/"
         element={
           <>
-            {/* TODO: NAVBAR HERE */}
+            <NavBar />
             <Outlet />
           </>
         }
@@ -27,6 +28,7 @@ export default function ApplicationViews() {
           element={<TasksContainer currentUser={currentUser} />}
         />
         <Route path="chat" element={<span>CHAT: TODO</span>} />
+        <Route path="profile" element={<span>PROFILE: TODO</span>} />
       </Route>
     </Routes>
   );
