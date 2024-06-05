@@ -1,15 +1,16 @@
-.tasks-container {
+/* .tasks-container {
   display: flex;
   justify-content: center;
-}
+  padding: 6rem;
+} */
 
 .tasks-section {
   position: relative;
   padding: 0 16px 100px;
   /* max-width: 672px; */
-  /* max-width: 400px; */
+  max-width: 400px;
   margin: 0 auto;
-  background: #f5f5f4;
+  /* background: #f5f5f4; */
 }
 
 .tasks-section-inner {
@@ -82,6 +83,7 @@
   display: inline-flex;
   grid-column-start: 1;
   grid-row-start: 1;
+  cursor: pointer;
 }
 
 .task-btn {
@@ -175,6 +177,14 @@
   justify-content: space-between;
   gap: 0.5rem;
   padding-top: 0.5rem;
+}
+
+.task-icon-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .task-icon-holder {

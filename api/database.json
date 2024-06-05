@@ -201,32 +201,44 @@
     {
       "id": 1,
       "userId": 3,
-      "task": "Take out garbage"
+      "task": "Take out garbage",
+      "isCompleted": false,
+      "completionDate": "2024-08-12T03:06:27.975Z"
     },
     {
       "id": 2,
       "userId": 5,
-      "task": "Count to 1 million"
+      "task": "Count to 1 million",
+      "isCompleted": false,
+      "completionDate": "2024-08-13T03:06:27.975Z"
     },
     {
       "id": 3,
       "userId": 7,
-      "task": "Take a hike"
+      "task": "Take a hike",
+      "isCompleted": false,
+      "completionDate": "2024-08-12T03:06:27.975Z"
     },
     {
       "id": 4,
       "userId": 3,
-      "task": "Kick Rocks"
+      "task": "Kick Rocks",
+      "isCompleted": false,
+      "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
       "id": 5,
       "userId": 9,
-      "task": "Clear the Amazon Rain Forest"
+      "task": "Clear the Amazon Rain Forest",
+      "isCompleted": false,
+      "completionDate": "2024-08-12T03:06:27.975Z"
     },
     {
       "id": 6,
       "userId": 1,
-      "task": "Clean the shingles"
+      "task": "Clean the shingles",
+      "isCompleted": false,
+      "completionDate": "2024-08-12T03:06:27.975Z"
     }
   ],
   "images": [
