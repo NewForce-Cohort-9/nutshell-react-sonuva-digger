@@ -18,63 +18,139 @@
       "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
       "title": "Wormholes Allow Information to Escape Black Holes",
       "synopsis": "Check out this recent discovery about Wormholes"
-  },
+    },
     {
       "id": 2,
       "userId": 10,
       "url": "https://www.quantamagazine.org/cryptographers-discover-a-new-foundation-for-quantum-secrecy-20240603/",
       "title": "Cryptographers Discover a New Foundation for Quantum Secrecy",
       "synopsis": "Check out this recent discovery about Quantum Secrecy"
-  },
+    },
     {
       "id": 3,
       "userId": 4,
       "url": "https://www.quantamagazine.org/what-happens-in-the-brain-to-cause-depression-20240523/",
       "title": "What Happens in the Brain to Cause Depression?",
       "synopsis": "Check out this recent discovery about Depression"
-  },
+    },
     {
       "id": 4,
       "userId": 2,
       "url": "https://www.quantamagazine.org/insects-and-other-animals-have-consciousness-experts-declare-20240419/",
       "title": "Insects and Other Animals Have Consciousness, Experts Declare",
       "synopsis": "Check out this recent discovery about Insects"
-  },
+    },
     {
       "id": 5,
       "userId": 3,
       "url": "https://www.quantamagazine.org/bats-use-the-same-brain-cells-to-map-physical-and-social-worlds-20231031/",
       "title": "Bats Use the Same Brain Cells to Map Physical and Social Worlds",
       "synopsis": "Check out this recent discovery about Bats"
-  },
+    },
     {
       "id": 5,
       "userId": 1,
       "url": "https://www.mavtv.com/athletes/ryan-anderson",
       "title": "Ryan Anderson: The Legacy of Son-Uva Digger",
       "synopsis": "Check out this recent discovery about Ryan Anderson"
-  }
+    }
   ],
   "messages": [
-    { "id": 1, "userId": 10, "message": "What's up?" },
-    { "id": 2, "userId": 1, "message": "Greetings" },
-    { "id": 3, "userId": 5, "message": "How's the weather in LA?" },
-    { "id": 4, "userId": 10, "message": "Weather in LA is hot!" },
-    { "id": 5, "userId": 3, "message": "Do you know the muffin man?" },
-    { "id": 6, "userId": 6, "message": "The muffin man?" },
-    { "id": 7, "userId": 3, "message": "Yes! The muffin man" },
-    { "id": 8, "userId": 1, "message": "I need help understand quantum physics" },
-    { "id": 9, "userId": 10, "message": "I'm going to break for lunch" }
+    {
+      "id": 1,
+      "userId": 10,
+      "message": "What's up?"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "message": "Greetings"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "message": "How's the weather in LA?"
+    },
+    {
+      "id": 4,
+      "userId": 10,
+      "message": "Weather in LA is hot!"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "message": "Do you know the muffin man?"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "message": "The muffin man?"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "message": "Yes! The muffin man"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "message": "I need help understand quantum physics"
+    },
+    {
+      "id": 9,
+      "userId": 10,
+      "message": "I'm going to break for lunch"
+    }
   ],
   "events": [
-    { "id": 1, "userId": 3, "eventDate": "June 5th, 2024", "location": "Hollywood, CA" },
-    { "id": 2, "userId": 3, "eventDate": "June 24th, 2024", "location": "Hollywood, CA" },
-    { "id": 3, "userId": 1, "eventDate": "July 4th, 2024", "location": "Washington, D.C" },
-    { "id": 4, "userId": 6, "eventDate": "July 19th, 2024", "location": "Bumchuck, WV" },
-    { "id": 5, "userId": 4, "eventDate": "August 16th, 2024", "location": "Morgantown, WV" },
-    { "id": 6, "userId": 10, "eventDate": "September 9th, 2024", "location": "Dublin, Ireland" },
-    { "id": 7, "userId": 6, "eventDate": "September 23rd, 2024", "location": "Allentown, PA" },
-    { "id": 8, "userId": 8, "eventDate": "October 10th, 2024", "location": "Raleigh, NC" }
+    {
+      "id": 1,
+      "userId": 3,
+      "eventDate": "June 5th, 2024",
+      "location": "Hollywood, CA"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "eventDate": "June 24th, 2024",
+      "location": "Hollywood, CA"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "eventDate": "July 4th, 2024",
+      "location": "Washington, D.C"
+    },
+    {
+      "id": 4,
+      "userId": 6,
+      "eventDate": "July 19th, 2024",
+      "location": "Bumchuck, WV"
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "eventDate": "August 16th, 2024",
+      "location": "Morgantown, WV"
+    },
+    {
+      "id": 6,
+      "userId": 10,
+      "eventDate": "September 9th, 2024",
+      "location": "Dublin, Ireland"
+    },
+    {
+      "id": 7,
+      "userId": 6,
+      "eventDate": "September 23rd, 2024",
+      "location": "Allentown, PA"
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "eventDate": "October 10th, 2024",
+      "location": "Raleigh, NC"
+    }
   ],
   "tasks": [
     { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
@@ -85,21 +161,82 @@
     { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
   ],
   "images": [
-    { "id": 1, "userId": 3, "url": "https://external-preview.redd.it/WsqYTm_RfCW4gg49uPVh-RY1CU9RmAVnKXPyRQmNM4U.jpg?width=1080&crop=smart&auto=webp&s=5b53d8fc05b6ef05de27e563bf360a196568bae5", "caption": "OMG look at that taco" },
-    { "id": 2, "userId": 2, "url": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg", "caption": "Enhanced images are awesome!" },
-    { "id": 3, "userId": 5, "url": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg", "caption": "I love this view!" },
-    { "id": 4, "userId": 3, "url": "https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg", "caption": "Nature in its purest form" },
-    { "id": 5, "userId": 1, "url": "https://cdn.openart.ai/stable_diffusion/52a5532f86e42b034be9248f1b88f0fa244d47f5_2000x2000.webp", "caption": "Do any of these look familiar?" }
+    {
+      "id": 1,
+      "userId": 3,
+      "url": "https://external-preview.redd.it/WsqYTm_RfCW4gg49uPVh-RY1CU9RmAVnKXPyRQmNM4U.jpg?width=1080&crop=smart&auto=webp&s=5b53d8fc05b6ef05de27e563bf360a196568bae5",
+      "caption": "OMG look at that taco"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "url": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "caption": "Enhanced images are awesome!"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "url": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "caption": "I love this view!"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "url": "https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg",
+      "caption": "Nature in its purest form"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "url": "https://cdn.openart.ai/stable_diffusion/52a5532f86e42b034be9248f1b88f0fa244d47f5_2000x2000.webp",
+      "caption": "Do any of these look familiar?"
+    }
   ],
   "friends": [
-    { "id": 1, "userId": 1, "loggedInUserId": 3 },
-    { "id": 2, "userId": 2, "loggedInUserId": 3 },
-    { "id": 3, "userId": 4, "loggedInUserId": 3 },
-    { "id": 4, "userId": 5, "loggedInUserId": 3 },
-    { "id": 5, "userId": 6, "loggedInUserId": 3 },
-    { "id": 6, "userId": 7, "loggedInUserId": 3 },
-    { "id": 7, "userId": 8, "loggedInUserId": 3 },
-    { "id": 8, "userId": 9, "loggedInUserId": 3 },
-    { "id": 9, "userId": 10, "loggedInUserId": 3 }
+    {
+      "id": 1,
+      "userId": 1,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 6,
+      "userId": 7,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 7,
+      "userId": 8,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 8,
+      "userId": 9,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 9,
+      "userId": 10,
+      "loggedInUserId": 3
+    }
   ]
 }
