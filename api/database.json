@@ -1,15 +1,82 @@
 {
   "users": [
-    { "id": 1, "username": "Ryan", "bio": "", "avatar": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png", "email": "ryananderson@sonuva.com", "created_at": "2020-06-04T12:34:56Z"},
-    { "id": 2, "username": "Bob", "email": "bob@messageme.com", "avatar": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne", "created_at": "2020-07-04T12:34:56Z"},
-    { "id": 3, "username": "Charlie", "email": "charlie@charliesemail.com", "avatar": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne", "created_at": "2020-08-04T12:34:56Z"},
-    { "id": 4, "username": "Daisy", "email": "daisy@flowers.com", "avatar": "https://cdnstorage.sendbig.com/unreal/female.webp", "created_at": "2020-09-04T12:34:56Z"},
-    { "id": 5, "username": "Eve", "email": "eve@adam.com", "avatar": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne", "created_at": "2020-10-04T12:34:56Z"},
-    { "id": 6, "username": "Frank", "email": "frank@ballpark.com", "avatar": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne", "created_at": "2020-11-04T12:34:56Z"},
-    { "id": 7, "username": "Grace", "email": "grace@saving.com", "avatar": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne", "created_at": "2020-12-04T12:34:56Z"},
-    { "id": 8, "username": "Hank", "email": "hank@hill.com", "avatar": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne", "created_at": "2021-01-04T12:34:56Z"},
-    { "id": 9, "username": "Ivy", "email": "ivy@poison.com", "avatar": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne", "created_at": "2021-02-04T12:34:56Z"},
-    { "id": 10, "username": "Jack", "email": "jack@andthebeanstock.com", "avatar": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne", "created_at": "2021-03-04T12:34:56Z"}
+    {
+      "id": 1,
+      "username": "Ryan",
+      "email": "ryananderson@sonuva.com",
+      "avatar": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png",
+      "created_at": "2020-06-04T12:34:56Z"
+    },
+    {
+      "id": 2,
+      "username": "Bob",
+      "email": "bob@messageme.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne",
+      "created_at": "2020-07-04T12:34:56Z"
+    },
+    {
+      "id": 3,
+      "username": "Charlie",
+      "email": "charlie@charliesemail.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne",
+      "created_at": "2020-08-04T12:34:56Z"
+    },
+    {
+      "id": 4,
+      "username": "Daisy",
+      "email": "daisy@flowers.com",
+      "avatar": "https://cdnstorage.sendbig.com/unreal/female.webp",
+      "created_at": "2020-09-04T12:34:56Z"
+    },
+    {
+      "id": 5,
+      "username": "Eve",
+      "email": "eve@adam.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne",
+      "created_at": "2020-10-04T12:34:56Z"
+    },
+    {
+      "id": 6,
+      "username": "Frank",
+      "email": "frank@ballpark.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne",
+      "created_at": "2020-11-04T12:34:56Z"
+    },
+    {
+      "id": 7,
+      "username": "Grace",
+      "email": "grace@saving.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne",
+      "created_at": "2020-12-04T12:34:56Z"
+    },
+    {
+      "id": 8,
+      "username": "Hank",
+      "email": "hank@hill.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne",
+      "created_at": "2021-01-04T12:34:56Z"
+    },
+    {
+      "id": 9,
+      "username": "Ivy",
+      "email": "ivy@poison.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne",
+      "created_at": "2021-02-04T12:34:56Z"
+    },
+    {
+      "id": 10,
+      "username": "Jack",
+      "email": "jack@andthebeanstock.com",
+      "avatar": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne",
+      "created_at": "2021-03-04T12:34:56Z"
+    },
+    {
+      "username": "Jess",
+      "email": "jess@newforce.cohort9",
+      "avatar": "",
+      "created_at": "2024-06-05T17:57:03.799Z",
+      "id": 11
+    }
   ],
   "news": [
     {
@@ -159,12 +226,42 @@
     }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
-    { "id": 2, "userId": 5, "task": "Count to 1 million", "isComplete": true },
-    { "id": 3, "userId": 7, "task": "Take a hike", "isComplete": false },
-    { "id": 4, "userId": 3, "task": "Kick Rocks", "isComplete": true },
-    { "id": 5, "userId": 9, "task": "Clear the Amazon Rain Forest", "isComplete": false },
-    { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "task": "Count to 1 million",
+      "isComplete": true
+    },
+    {
+      "id": 3,
+      "userId": 7,
+      "task": "Take a hike",
+      "isComplete": false
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "task": "Kick Rocks",
+      "isComplete": true
+    },
+    {
+      "id": 5,
+      "userId": 9,
+      "task": "Clear the Amazon Rain Forest",
+      "isComplete": false
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "task": "Clean the shingles",
+      "isComplete": true
+    }
   ],
   "images": [
     {

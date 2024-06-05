@@ -17,11 +17,16 @@ export const Register = (props) => {
   const [user, setUser] = useState({
     username: "",
     email: "",
+    avatar: "",
+    created_at: "",
   })
   let navigate = useNavigate()
 
   const registerNewUser = () => {
-    createUser(user).then((createdUser) => {
+    const currentTime = new Date().toISOString();
+    const userWithCreatedAt = { ...user, created_at: currentTime };
+
+    createUser(userWithCreatedAt).then((createdUser) => {
       if (createdUser.hasOwnProperty("id")) {
         localStorage.setItem(
           "loggedInUser",
