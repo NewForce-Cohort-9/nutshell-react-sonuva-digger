@@ -1,5 +1,6 @@
 import { Routes, Route, Outlet } from "react-router-dom";
-import { getAllEvents } from "../events/eventServices.jsx";
+import NavBar from "../components/Nav/NavBar.jsx";
+
 export default function ApplicationViews() {
   return (
     <Routes>
@@ -7,7 +8,7 @@ export default function ApplicationViews() {
         path="/"
         element={
           <>
-            <span style={{ color: "black" }}>NAVBAR: Todo</span>
+            <NavBar />
             <Outlet />
           </>
         }
@@ -20,6 +21,7 @@ export default function ApplicationViews() {
         <Route path="events" element={<span>getAllEvents</span>} />
         <Route path="tasks" element={<span>TASKS: TODO</span>} />
         <Route path="chat" element={<span>CHAT: TODO</span>} />
+        <Route path="profile" element={<span>PROFILE: TODO</span>} />
       </Route>
     </Routes>
   );
