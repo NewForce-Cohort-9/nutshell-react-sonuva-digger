@@ -1,3 +1,4 @@
+import "./Login.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -41,14 +42,14 @@ export const Login = () => {
   return (
     <main>
       <Card
-        className="my-2"
+        className="my-2 text-center"
         color="light"
         style={{
           width: "50rem",
         }}
       >
-        <CardHeader>Sonuva Digger</CardHeader>
-        <CardBody>
+        <CardHeader className="p-3">Sonuva Digger</CardHeader>
+        <CardBody className="p-4">
           <CardTitle tag="h5">Please sign in</CardTitle>
           <Form onSubmit={handleLogin}>
             <FormGroup floating>

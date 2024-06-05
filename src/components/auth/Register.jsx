@@ -1,16 +1,28 @@
+import "./Login.css";
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { createUser, getUserByEmail } from "../../services/userService"
+import {
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
+  CardTitle,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+} from "reactstrap";
 
 export const Register = (props) => {
   const [user, setUser] = useState({
+    username: "",
     email: "",
-    fullName: "",
   })
   let navigate = useNavigate()
 
   const registerNewUser = () => {
-    createUser(customer).then((createdUser) => {
+    createUser(user).then((createdUser) => {
       if (createdUser.hasOwnProperty("id")) {
         localStorage.setItem(
           "loggedInUser",
@@ -43,42 +55,85 @@ export const Register = (props) => {
     setUser(copy)
   }
 
-  return (
-    <main>
-      <form onSubmit={handleRegister}>
-        <h1>Sonuva Digger</h1>
-        <h2>Please Register</h2>
-        <fieldset>
-          <div>
-            <input
+//   return (
+//     <main>
+//       <form onSubmit={handleRegister}>
+//         <h1>Sonuva Digger</h1>
+//         <h2>Please Register</h2>
+//         <fieldset>
+//           <div>
+//             <input
+//               onChange={updateUser}
+//               type="text"
+//               id="fullName"
+//               placeholder="Enter your name"
+//               required
+//               autoFocus
+//             />
+//           </div>
+//         </fieldset>
+//         <fieldset>
+//           <div>
+//             <input
+//               onChange={updateUser}
+//               type="email"
+//               id="email"
+//               placeholder="Email address"
+//               required
+//             />
+//           </div>
+//         </fieldset>
+//         <fieldset>
+//           <div>
+//             <button type="submit">
+//               Register
+//             </button>
+//           </div>
+//         </fieldset>
+//       </form>
+//     </main>
+//   )
+// }
+
+return (
+  <main>
+    <Card
+      className="my-2 text-center"
+      color="light"
+      style={{
+        width: "50rem",
+      }}
+    >
+      <CardHeader className="p-3">Sonuva Digger</CardHeader>
+      <CardBody className="p-4">
+        <CardTitle tag="h5">Please Register</CardTitle>
+        <Form onSubmit={handleRegister}>
+          <FormGroup floating>
+            <Input
               onChange={updateUser}
               type="text"
-              id="fullName"
+              id="username"
               placeholder="Enter your name"
               required
-              autoFocus
             />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <input
+            <Label for="username">Name</Label>
+          </FormGroup>
+          <FormGroup floating>
+            <Input
               onChange={updateUser}
               type="email"
               id="email"
               placeholder="Email address"
               required
-            />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div>
-            <button type="submit">
-              Register
-            </button>
-          </div>
-        </fieldset>
-      </form>
-    </main>
-  )
-}
+            />{" "}
+            <Label for="email">Email</Label>
+          </FormGroup>
+          <Button color="primary" type="submit">
+            Register
+          </Button>
+        </Form>
+      </CardBody>
+    </Card>
+  </main>
+);
+};
