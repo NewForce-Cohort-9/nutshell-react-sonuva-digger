@@ -1,0 +1,198 @@
+.tasks-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tasks-section {
+  position: relative;
+  padding: 0 16px 100px;
+  /* max-width: 672px; */
+  margin: 0 auto;
+  background: #f5f5f4;
+}
+
+.tasks-section-inner {
+  min-height: 448px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.task-shadow {
+  position: relative;
+  border-radius: 1.5rem;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 #0000, 0 0 #0000, inset 0px -1px 0px #e0e2d9;
+}
+
+.task-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.task-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: auto;
+  border-color: #d7dce1;
+}
+
+.task-content {
+  flex: 1 1 0%;
+  padding: 16px;
+  height: 100%;
+  position: relative;
+}
+
+.task-inner-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 90%);
+  margin-bottom: 0.25rem;
+  align-items: baseline;
+  width: 100%;
+}
+
+.task-title-ctn {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.task-title {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.task-inline-flex {
+  display: inline-flex;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.task-btn {
+  display: flex;
+  align-items: center;
+  outline-width: 2px;
+  outline-offset: 2px;
+  max-width: 100%;
+}
+
+.task-para {
+  overflow: hidden;
+  max-width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  /* color: #000000; */
+  color: #6b7280;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.task-check-ctn {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+/* checkbox */
+
+.task-check label {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.125rem;
+  outline-style: none;
+  width: fit-content;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.task-check input {
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.task-check div {
+  position: relative;
+  align-self: center;
+  border-radius: 1rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  height: 20px;
+  width: 2rem;
+}
+
+.task-check span {
+  position: absolute;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  top: 2px;
+  left: 2px;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* end checkbox */
+
+.task-icon-ctn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.task-icon-holder {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.125rem;
+  height: auto;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.task-icon-holder div {
+  display: flex;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+}
