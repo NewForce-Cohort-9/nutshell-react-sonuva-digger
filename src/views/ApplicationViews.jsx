@@ -1,4 +1,5 @@
 import { Routes, Route, Outlet } from "react-router-dom";
+import { ChatRoom } from "../components/Chat/ChatRoom.jsx";
 
 export default function ApplicationViews() {
   return (
@@ -19,7 +20,7 @@ export default function ApplicationViews() {
         <Route path="news" element={<span>NEWS: TODO</span>}></Route>
         <Route path="events" element={<span>EVENTS: TODO </span>} />
         <Route path="tasks" element={<span>TASKS: TODO</span>} />
-        <Route path="chat" element={<span>CHAT: TODO</span>} />
+        <Route path="/chat" element={<ChatRoom />} />
       </Route>
     </Routes>
   );
