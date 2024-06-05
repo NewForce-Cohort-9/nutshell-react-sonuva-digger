@@ -19,14 +19,17 @@ export default function TasksList({ currentUser }) {
     callGetAllTasks();
   }, []);
 
-  const toggleEditTask = () => setIsEditTaskOpen(!isEditTaskOpen);
+  const toggleEditTask = (taskId) => {
+    setIsEditTaskOpen(!isEditTaskOpen);
+    setActiveTaskId(taskId);
+  };
 
   const callGetAllTasks = async () => {
     const allUserTasks = await getAllTasksByUserId(3); //replace with currentUser.id
     setUserTasks(allUserTasks);
   };
 
-  const handleAddNewTask = () => {
+  const onNewTaskClick = () => {
     setIsEditTaskOpen(true);
     setActiveTaskId(userTasks.length);
   };
@@ -34,7 +37,13 @@ export default function TasksList({ currentUser }) {
   return (
     <>
       {isEditTaskOpen && (
-        <EditTask isModalOpen={isEditTaskOpen} toggle={toggleEditTask} />
+        <EditTask
+          activeTaskId={activeTaskId}
+          isModalOpen={isEditTaskOpen}
+          toggle={toggleEditTask}
+          userTasks={userTasks}
+          setUserTasks={setUserTasks}
+        />
       )}
 
       <div className="tasks-list">
@@ -48,9 +57,11 @@ export default function TasksList({ currentUser }) {
             />
           );
         })}
-        <Button onClick={() => setIsEditTaskOpen(true)}>
+        <Button style={{ width: "100%" }} onClick={onNewTaskClick}>
           New task
-          <AddIcon size={12} />
+          <span style={{ paddingLeft: "0.5rem" }}>
+            <AddIcon size={12} />
+          </span>
         </Button>
       </div>
     </>

@@ -8,10 +8,7 @@ import { markTaskComplete } from "../../services/taskService";
  */
 
 export default function Task({ task, toggleEditTask }) {
-  const [isEditingTask, setIsEditingTask] = useState(false);
-
   const callMarkTaskComplete = async () => {
-    console.log("task is", task);
     // await markTaskComplete(task);
   };
 
@@ -37,7 +34,7 @@ export default function Task({ task, toggleEditTask }) {
                             <span className="task-title">{task.task}</span>
                           </div>
                           <div
-                            onClick={toggleEditTask}
+                            onClick={() => toggleEditTask(task.id)}
                             className="task-inline-flex"
                           >
                             <span className="task-btn">
@@ -87,10 +84,19 @@ export default function Task({ task, toggleEditTask }) {
                       <div className="task-icon-holder">
                         <button
                           style={{ all: "unset", cursor: "pointer" }}
-                          onClick={toggleEditTask}
+                          onClick={() => toggleEditTask(task.id)}
                         >
                           <span style={{ marginRight: "0.25rem" }}>
                             <DateIcon size={16} color="#6b7280" />
+                            <span
+                              style={{
+                                fontSize: "0.75rem",
+                                paddingLeft: "0.5rem",
+                                textAlign: "center",
+                              }}
+                            >
+                              {task.completionDate.slice(0, 10)}
+                            </span>
                           </span>
                         </button>
                       </div>
