@@ -1,15 +1,60 @@
 {
   "users": [
-    { "id": 1, "username": "Ryan", "email": "ryananderson@sonuva.com" },
-    { "id": 2, "username": "Bob", "email": "bob@messageme.com" },
-    { "id": 3, "username": "Charlie", "email": "charlie@charliesemail.com" },
-    { "id": 4, "username": "Daisy", "email": "daisy@flowers.com" },
-    { "id": 5, "username": "Eve", "email": "eve@adam.com" },
-    { "id": 6, "username": "Frank", "email": "frank@ballpark.com" },
-    { "id": 7, "username": "Grace", "email": "grace@saving.com" },
-    { "id": 8, "username": "Hank", "email": "hank@hill.com" },
-    { "id": 9, "username": "Ivy", "email": "ivy@poison.com" },
-    { "id": 10, "username": "Jack", "email": "jack@andthebeanstock.com" }
+    {
+      "id": 1,
+      "username": "Ryan",
+      "email": "ryananderson@sonuva.com"
+    },
+    {
+      "id": 2,
+      "username": "Bob",
+      "email": "bob@messageme.com"
+    },
+    {
+      "id": 3,
+      "username": "Charlie",
+      "email": "charlie@charliesemail.com"
+    },
+    {
+      "id": 4,
+      "username": "Daisy",
+      "email": "daisy@flowers.com"
+    },
+    {
+      "id": 5,
+      "username": "Eve",
+      "email": "eve@adam.com"
+    },
+    {
+      "id": 6,
+      "username": "Frank",
+      "email": "frank@ballpark.com"
+    },
+    {
+      "id": 7,
+      "username": "Grace",
+      "email": "grace@saving.com"
+    },
+    {
+      "id": 8,
+      "username": "Hank",
+      "email": "hank@hill.com"
+    },
+    {
+      "id": 9,
+      "username": "Ivy",
+      "email": "ivy@poison.com"
+    },
+    {
+      "id": 10,
+      "username": "Jack",
+      "email": "jack@andthebeanstock.com"
+    },
+    {
+      "username": "Jess",
+      "email": "jess@newforce.cohort",
+      "id": 11
+    }
   ],
   "news": [
     {
@@ -56,19 +101,51 @@
     }
   ],
   "messages": [
-    { "id": 1, "userId": 10, "message": "What's up?" },
-    { "id": 2, "userId": 1, "message": "Greetings" },
-    { "id": 3, "userId": 5, "message": "How's the weather in LA?" },
-    { "id": 4, "userId": 10, "message": "Weather in LA is hot!" },
-    { "id": 5, "userId": 3, "message": "Do you know the muffin man?" },
-    { "id": 6, "userId": 6, "message": "The muffin man?" },
-    { "id": 7, "userId": 3, "message": "Yes! The muffin man" },
+    {
+      "id": 1,
+      "userId": 10,
+      "message": "What's up?"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "message": "Greetings"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "message": "How's the weather in LA?"
+    },
+    {
+      "id": 4,
+      "userId": 10,
+      "message": "Weather in LA is hot!"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "message": "Do you know the muffin man?"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "message": "The muffin man?"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "message": "Yes! The muffin man"
+    },
     {
       "id": 8,
       "userId": 1,
       "message": "I need help understand quantum physics"
     },
-    { "id": 9, "userId": 10, "message": "I'm going to break for lunch" }
+    {
+      "id": 9,
+      "userId": 10,
+      "message": "I'm going to break for lunch"
+    }
   ],
   "events": [
     {
@@ -121,22 +198,36 @@
     }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage", "isCompleted": false },
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage"
+    },
     {
       "id": 2,
       "userId": 5,
-      "task": "Count to 1 million",
-      "isCompleted": false
+      "task": "Count to 1 million"
     },
-    { "id": 3, "userId": 7, "task": "Take a hike", "isCompleted": false },
-    { "id": 4, "userId": 3, "task": "Kick Rocks", "isCompleted": false },
+    {
+      "id": 3,
+      "userId": 7,
+      "task": "Take a hike"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "task": "Kick Rocks"
+    },
     {
       "id": 5,
       "userId": 9,
-      "task": "Clear the Amazon Rain Forest",
-      "isCompleted": false
+      "task": "Clear the Amazon Rain Forest"
     },
-    { "id": 6, "userId": 1, "task": "Clean the shingles", "isCompleted": false }
+    {
+      "id": 6,
+      "userId": 1,
+      "task": "Clean the shingles"
+    }
   ],
   "images": [
     {
@@ -171,14 +262,50 @@
     }
   ],
   "friends": [
-    { "id": 1, "userId": 1, "loggedInUserId": 3 },
-    { "id": 2, "userId": 2, "loggedInUserId": 3 },
-    { "id": 3, "userId": 4, "loggedInUserId": 3 },
-    { "id": 4, "userId": 5, "loggedInUserId": 3 },
-    { "id": 5, "userId": 6, "loggedInUserId": 3 },
-    { "id": 6, "userId": 7, "loggedInUserId": 3 },
-    { "id": 7, "userId": 8, "loggedInUserId": 3 },
-    { "id": 8, "userId": 9, "loggedInUserId": 3 },
-    { "id": 9, "userId": 10, "loggedInUserId": 3 }
+    {
+      "id": 1,
+      "userId": 1,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 6,
+      "userId": 7,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 7,
+      "userId": 8,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 8,
+      "userId": 9,
+      "loggedInUserId": 3
+    },
+    {
+      "id": 9,
+      "userId": 10,
+      "loggedInUserId": 3
+    }
   ]
 }
