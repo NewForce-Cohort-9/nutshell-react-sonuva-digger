@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export const EventList = ({ currentUser }) => {
     const [eventsList, setEventsList] = useState([]);
+    const [filteredEventsList, setFilteredEventsList] = useState([]);
 
     const navigate = useNavigate();
 
@@ -15,17 +16,24 @@ export const EventList = ({ currentUser }) => {
 
     }, [])
 
+    useEffect(() => {
+
+        console.log("currentUser", currentUser.id)
+        const eventsForUser = eventsList.filter(event => event.userId == currentUser.id)
+        setFilteredEventsList(eventsForUser)
+
+    }, [eventsList])
+
+
+
 
     return (
         <>
             <section>
-                <div>
-                </div>
-                <div>
-                    <button onClick={() => { navigate("/newevent") }}>New Event</button>
-                </div>
+                {/* <div>
+                </div> */}
                 <article>
-                    {eventsList.map(currentEvent => {
+                    {filteredEventsList.map(currentEvent => {
                         return (
                             <section key={currentEvent.id}>
                                 <h3>{currentEvent.name}</h3>
@@ -34,8 +42,12 @@ export const EventList = ({ currentUser }) => {
                             </section>
                         );
                     })}
+                    <div>
+                        <button onClick={() => { navigate("/newevent") }}>New Event</button>
+                    </div>
+
                 </article>
-            </section>
+            </section >
         </>
     );
 }

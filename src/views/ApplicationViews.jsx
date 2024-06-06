@@ -15,7 +15,8 @@ export default function ApplicationViews() {
 
   useEffect(() => {
     const localUser = localStorage.getItem("loggedInUser");
-    setCurrentUser(JSON.parse(localUser));
+    const parsedUser = JSON.parse(localUser)
+    setCurrentUser(parsedUser);
   }, []);
 
   return (
@@ -33,8 +34,9 @@ export default function ApplicationViews() {
           index
           element={<span style={{ color: "black" }}>Splash page: TODO</span>}
         />
-        <Route path="news" element={<span>NEWS: TODO</span>}></Route>
-        <Route path="events" element={<span>EVENTS: TODO </span>} />
+        <Route path="news" element={<News currentUser={currentUser} />} />
+        <Route path="events" element={<EventList currentUser={currentUser} />} />
+        <Route path="newevent" element={<NewEvent currentUser={currentUser} />} />
         <Route
           path="tasks"
           element={<TasksContainer currentUser={currentUser} />}
