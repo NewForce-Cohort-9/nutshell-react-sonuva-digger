@@ -8,6 +8,7 @@ import { EventList } from "../events/EventList.jsx";
 import { NewEvent } from "../events/NewEvent.jsx";
 
 
+import { ActivateChat } from "../components/Chat/ActivateChat.jsx";
 
 export default function ApplicationViews() {
 
@@ -41,7 +42,10 @@ export default function ApplicationViews() {
           path="tasks"
           element={<TasksContainer currentUser={currentUser} />}
         />
-        <Route path="chat" element={<ChatRoom />} />
+        <Route path="chat" element={<Outlet />}>
+          <Route index element={<ActivateChat />} />
+          <Route path="room" element={<ChatRoom />} />
+        </Route>
         <Route path="profile" element={<span>PROFILE: TODO</span>} />
       </Route>
     </Routes>
