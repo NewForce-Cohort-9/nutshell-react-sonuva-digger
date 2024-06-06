@@ -7,87 +7,88 @@ import {
   ModalFooter,
   Input,
 } from "reactstrap";
-import { createTask } from "../../services/taskService";
+import { createTask, updateTask } from "../../services/taskService";
 
 /*
  **Author: LJ White
- **Purpose: Edit or add tasks
+ **Purpose: Modify/edit or add a task
  */
 
 export default function EditTask({
-  isModalOpen,
-  toggle,
+  isEditTaskOpen,
+  toggleEditModal,
+  activeTaskIndex,
   activeTaskId,
   userTasks,
-  setUserTasks,
   currentUser,
+  setDidTaskAction,
 }) {
   const [taskName, setTaskName] = useState("");
   const [taskDate, setTaskDate] = useState(new Date());
 
-  const isNewTask = activeTaskId === userTasks.length;
-  const existingTask = userTasks.find((task) => task.id === activeTaskId);
+  const isNewTask = activeTaskIndex === userTasks.length;
+  const existingTask = userTasks[activeTaskIndex];
 
   useEffect(() => {
-    if (!isNewTask) {
+    if (!isNewTask && existingTask) {
       setTaskName(existingTask.task);
-      setTaskDate(existingTask.completionDate);
+      setTaskDate(existingTask.completionDate.slice(0, 10));
     }
   }, []);
-
-  const handleTaskNameChange = (e) => {
-    setTaskName(e.target.value);
-  };
-
-  const handleTaskDateChange = (e) => {
-    console.log("e", e.target.value);
-  };
 
   const addNewTask = async () => {
     const newTask = {
       userId: currentUser.id,
       task: taskName,
-      completionDate: taskDate ?? new Date(),
+      completionDate: new Date(taskDate).toISOString(),
       isComplete: false,
     };
+
     await createTask(newTask);
-
-    const newTasks = [...userTasks, newTask].map((obj, index) => ({
-      ...obj,
-      id: index,
-    }));
-
-    setUserTasks(newTasks);
-    toggle();
+    setDidTaskAction(true);
+    toggleEditModal();
   };
 
   const editTask = async () => {
-    //TODO
+    const editedTask = {
+      id: activeTaskId,
+      userId: currentUser.id,
+      task: taskName,
+      completionDate: new Date(taskDate).toISOString(),
+      isComplete: false,
+    };
+    await updateTask(editedTask);
+    setDidTaskAction(true);
+
+    toggleEditModal();
   };
 
   return (
-    <Modal isOpen={isModalOpen} toggle={toggle} size="sm">
-      <ModalHeader toggle={toggle}>
+    <Modal isOpen={isEditTaskOpen} toggle={toggleEditModal} size="md">
+      <ModalHeader toggle={toggleEditModal}>
         {isNewTask ? "Add a task" : "Edit your task"}
       </ModalHeader>
       <ModalBody>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
           <div>
             {isNewTask ? "Enter a task" : "Edit your task"}
-            <Input value={taskName} onChange={handleTaskNameChange} />
+            <Input
+              value={taskName}
+              onChange={(e) => setTaskName(e.target.value)}
+            />
           </div>
-          <div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
             {isNewTask ? "Enter a completion date" : "Edit completion date"}
             <input
               value={taskDate}
               type="date"
-              onChange={handleTaskDateChange}
+              onChange={(e) => setTaskDate(e.target.value)}
             />
           </div>
         </div>
       </ModalBody>
       <ModalFooter>
-        <Button color="secondary" onClick={toggle}>
+        <Button color="secondary" onClick={toggleEditModal}>
           Cancel
         </Button>
         <Button color="primary" onClick={isNewTask ? addNewTask : editTask}>

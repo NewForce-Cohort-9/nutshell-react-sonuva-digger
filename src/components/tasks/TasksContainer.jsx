@@ -3,7 +3,7 @@ import "./Tasks.css";
 
 /*
  **Author: LJ White
- **Purpose: Container that holds wrappers/other stylistic stuff and the list of tasks
+ **Purpose: Container that hold the list of tasks and any other elements needed for tasks route
  */
 
 export default function TasksContainer({ currentUser }) {

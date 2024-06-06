@@ -11,11 +11,12 @@ export const createTask = async (task) => {
 };
 
 export const updateTask = async (task) => {
+  const { index, ...rest } = task; //remove index property added to assist in modifying tasks
   try {
-    await fetch(`http://localhost:8088/tasks/${task.id}`, {
+    await fetch(`http://localhost:8088/tasks/${rest.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(task),
+      body: JSON.stringify(rest),
     });
   } catch (error) {
     return null;

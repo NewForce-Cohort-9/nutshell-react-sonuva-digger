@@ -5,9 +5,7 @@ import { ChecklistIcon, DateIcon, EditPencil } from "../../assets/icons";
  **Purpose: Provides a visual component for a task
  */
 
-//TODO - unfinished
-
-export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
+export default function Task({ task, toggleEditModal, callMarkTaskComplete }) {
   return (
     <>
       <div style={{ position: "relative", paddingBottom: "1rem" }}>
@@ -16,7 +14,7 @@ export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
             <div>
               <div className="task-flex">
                 <div className="task-border">
-                  {/* <ArrowIcon size={16} /> */}
+                  <p className="task-para">#{task.index + 1}</p>
                 </div>
                 <div className="task-content">
                   <div className="task-inner-row">
@@ -27,7 +25,7 @@ export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
                             <span className="task-title">{task.task}</span>
                           </div>
                           <div
-                            onClick={() => toggleEditTask(task.id)}
+                            onClick={() => toggleEditModal(task.index, task.id)}
                             className="task-inline-flex"
                           >
                             <span className="task-btn">
@@ -77,7 +75,7 @@ export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
                       <div className="task-icon-holder">
                         <button
                           style={{ all: "unset", cursor: "pointer" }}
-                          onClick={() => toggleEditTask(task.id)}
+                          onClick={() => toggleEditModal(task.index, task.id)}
                         >
                           <span style={{ marginRight: "0.25rem" }}>
                             <DateIcon size={16} color="#6b7280" />
@@ -88,7 +86,7 @@ export default function Task({ task, toggleEditTask, callMarkTaskComplete }) {
                                 textAlign: "center",
                               }}
                             >
-                              {task.completionDate?.slice(0, 10)}
+                              {task.completionDate.slice(0, 10)}
                             </span>
                           </span>
                         </button>

@@ -218,15 +218,15 @@
       "id": 1,
       "userId": 3,
       "task": "Take out garbage",
-      "isComplete": false,
+      "isComplete": true,
       "completionDate": "2024-08-12T03:06:27.975Z"
     },
     {
       "id": 2,
       "userId": 3,
-      "task": "Count to 1 million",
-      "isComplete": false,
-      "completionDate": "2024-08-13T03:06:27.975Z"
+      "task": "Count to 2 million",
+      "completionDate": "2024-08-13T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 3,
@@ -238,52 +238,51 @@
     {
       "id": 4,
       "userId": 3,
-      "task": "Kick Rocks",
-      "isComplete": false,
-      "completionDate": "2024-08-20T03:06:27.975Z"
+      "task": "Kick Rocks downstairs",
+      "completionDate": "2024-08-17T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 5,
       "userId": 9,
       "task": "Clear the Amazon Rain Forest",
-      "isComplete": false
+      "isComplete": false,
+      "completionDate": "2024-06-05T19:13:19.621Z"
     },
     {
       "id": 6,
       "userId": 1,
       "task": "Clean the shingles",
-      "isComplete": true
-    },
-    {
-      "task": "eat barbecue",
-      "completionDate": "2024-06-05T19:13:19.621Z",
       "isComplete": false,
-      "id": 7
-    },
-    {
-      "task": "lool",
-      "completionDate": "2024-06-07",
-      "isComplete": false,
-      "id": 8
-    },
-    {
-      "task": "neww taskkk",
-      "completionDate": "2024-06-08",
-      "isComplete": false,
-      "id": 9
-    },
-    {
-      "task": "",
-      "completionDate": "2024-06-05T19:50:14.254Z",
-      "isComplete": false,
-      "id": 10
+      "completionDate": "2024-06-05T19:13:19.621Z"
     },
     {
       "userId": 3,
-      "task": "salad",
-      "completionDate": "2024-06-15",
+      "task": "eat macaroni",
+      "completionDate": "2024-06-29T00:00:00.000Z",
+      "isComplete": true,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "task": "eat a bbq lol",
+      "completionDate": "2024-07-06T00:00:00.000Z",
+      "isComplete": true
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "task": "eat poison",
+      "completionDate": "2024-06-29T00:00:00.000Z",
+      "isComplete": true
+    },
+    {
+      "userId": 3,
+      "task": "my new task",
+      "completionDate": "2024-06-15T00:00:00.000Z",
       "isComplete": false,
-      "id": 11
+      "id": 10
     }
   ],
   "images": [
