@@ -2,7 +2,7 @@ import "./News.css";
 import { useEffect, useState } from "react";
 import { getAllNews, getSavedNews } from "../../services/newsService.jsx";
 
-export const News = ({ loggedInUserId }) => {
+export const News = ({ currentUser }) => {
   const [allNews, setAllNews] = useState([]);
   const [savedNews, setSavedNews] = useState([]);
 
@@ -16,13 +16,13 @@ export const News = ({ loggedInUserId }) => {
   }, []);
 
   useEffect(() => {
-    if (loggedInUserId) {
-      getSavedNews(loggedInUserId).then((savedNewsArray) => {
+    if (currentUser) {
+      getSavedNews(currentUser.id).then((savedNewsArray) => {
         setSavedNews(savedNewsArray);
         console.log("Saved news set!");
       });
     }
-  }, [loggedInUserId]);
+  }, [currentUser]);
 
   return (
     <section className="newsFlex">

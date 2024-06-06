@@ -29,7 +29,7 @@ export default function ApplicationViews() {
         />
         <Route
           path="news"
-          element={<News loggedInUserId={loggedInUserId} />}
+          element={<News currentUser={currentUser} />}
         ></Route>
         <Route path="events" element={<span>EVENTS: TODO </span>} />
         <Route
