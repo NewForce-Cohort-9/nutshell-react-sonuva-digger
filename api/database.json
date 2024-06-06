@@ -1,15 +1,85 @@
 {
   "users": [
-    { "id": 1, "username": "Ryan", "bio": "", "avatar": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png", "email": "ryananderson@sonuva.com", "created_at": "2020-06-04T12:34:56Z"},
-    { "id": 2, "username": "Bob", "email": "bob@messageme.com", "avatar": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne", "created_at": "2020-07-04T12:34:56Z"},
-    { "id": 3, "username": "Charlie", "email": "charlie@charliesemail.com", "avatar": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne", "created_at": "2020-08-04T12:34:56Z"},
-    { "id": 4, "username": "Daisy", "email": "daisy@flowers.com", "avatar": "https://cdnstorage.sendbig.com/unreal/female.webp", "created_at": "2020-09-04T12:34:56Z"},
-    { "id": 5, "username": "Eve", "email": "eve@adam.com", "avatar": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne", "created_at": "2020-10-04T12:34:56Z"},
-    { "id": 6, "username": "Frank", "email": "frank@ballpark.com", "avatar": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne", "created_at": "2020-11-04T12:34:56Z"},
-    { "id": 7, "username": "Grace", "email": "grace@saving.com", "avatar": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne", "created_at": "2020-12-04T12:34:56Z"},
-    { "id": 8, "username": "Hank", "email": "hank@hill.com", "avatar": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne", "created_at": "2021-01-04T12:34:56Z"},
-    { "id": 9, "username": "Ivy", "email": "ivy@poison.com", "avatar": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne", "created_at": "2021-02-04T12:34:56Z"},
-    { "id": 10, "username": "Jack", "email": "jack@andthebeanstock.com", "avatar": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne", "created_at": "2021-03-04T12:34:56Z"}
+    {
+      "id": 1,
+      "username": "Ryan",
+      "email": "ryananderson@sonuva.com",
+      "bio": "Hi, I'm Ryan Anderson, the proud driver of the Son Uva Digger truck. I've been living my dream, bringing the thrill of monster truck driving to fans all around the world. When I'm not behind the wheel, you can find me tinkering with engines and spending time with my family. Ready to rev up and crush some cars!",
+      "img": "https://images.squarespace-cdn.com/content/v1/63c2e8ac6699b1595ac63c12/1678744875412-73ANZAHGKXR1V3N2PRN3/MJ22_20221117_Summit_1186_Ryan%2BAnderson.jpg?format=1000w",
+      "created_at": "2020-06-04T12:34:56Z"
+    },
+    {
+      "id": 2,
+      "username": "Bob",
+      "email": "bob@messageme.com",
+      "bio": "Hey there, I'm Bob! I'm a tech enthusiast and a communication wizard. I love exploring new messaging platforms and finding innovative ways to connect people. When I'm not diving into the latest tech trends, you might find me hiking or enjoying a good sci-fi novel. Let's stay connected!",
+      "img": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne",
+      "created_at": "2020-07-04T12:34:56Z"
+    },
+    {
+      "id": 3,
+      "username": "Charlie",
+      "email": "charlie@charliesemail.com",
+      "bio": "Hello, I'm Charlie. I'm passionate about coding and everything related to technology. In my free time, I enjoy gaming, building cool gadgets, and learning new programming languages. Always up for a challenge and eager to create the next big thing in tech.",
+      "img": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne",
+      "created_at": "2020-08-04T12:34:56Z"
+    },
+    {
+      "id": 4,
+      "username": "Daisy",
+      "email": "daisy@flowers.com",
+      "bio": "Hi, I'm Daisy. I'm a nature lover with a particular fondness for flowers. When I'm not working, I love gardening, exploring new hiking trails, and capturing the beauty of nature through photography. Let's share the wonders of the great outdoors!",
+      "img": "https://cdnstorage.sendbig.com/unreal/female.webp",
+      "created_at": "2020-09-04T12:34:56Z"
+    },
+    {
+      "id": 5,
+      "username": "Eve",
+      "email": "eve@adam.com",
+      "bio": "Greetings, I'm Eve. I have a knack for solving puzzles and enjoy the logical challenges that programming offers. In my spare time, I like to read mystery novels, bake delicious treats, and volunteer at local animal shelters. Excited to connect with fellow enthusiasts!",
+      "img": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne",
+      "created_at": "2020-10-04T12:34:56Z"
+    },
+    {
+      "id": 6,
+      "username": "Frank",
+      "email": "frank@ballpark.com",
+      "bio": "Hey, I'm Frank. A sports fan through and through, especially when it comes to baseball. I enjoy the camaraderie of the ballpark and the thrill of the game. Off the field, I'm into grilling, woodworking, and spending quality time with family and friends.",
+      "img": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne",
+      "created_at": "2020-11-04T12:34:56Z"
+    },
+    {
+      "id": 7,
+      "username": "Grace",
+      "email": "grace@saving.com",
+      "bio": "Hi there, I'm Grace. With a keen interest in finance and saving strategies, I love helping people manage their money better. When I'm not crunching numbers, I enjoy yoga, painting, and exploring new cuisines. Let's make saving fun and effective!",
+      "img": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne",
+      "created_at": "2020-12-04T12:34:56Z"
+    },
+    {
+      "id": 8,
+      "username": "Hank",
+      "email": "hank@hill.com",
+      "bio": "Howdy, I'm Hank. A down-to-earth guy who enjoys the simple pleasures in life. I love spending time outdoors, whether it's fishing, camping, or tending to my garden. Big fan of classic rock and always up for a barbecue with friends and family.",
+      "img": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne",
+      "created_at": "2021-01-04T12:34:56Z"
+    },
+    {
+      "id": 9,
+      "username": "Ivy",
+      "email": "ivy@poison.com",
+      "bio": "Hello, I'm Ivy. With a name inspired by nature, I have a deep appreciation for the environment and sustainability. I enjoy gardening, reading about herbal medicine, and creating eco-friendly crafts. Let's work together to make our planet greener and healthier!",
+      "img": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne",
+      "created_at": "2021-02-04T12:34:56Z"
+    },
+    {
+      "id": 10,
+      "username": "Jack",
+      "email": "jack@andthebeanstock.com",
+      "bio": "Hey, I'm Jack. Just like the story, I'm always up for an adventure. Whether it's traveling to new places, trying out extreme sports, or diving into a good fantasy book, I'm all about experiencing the extraordinary. Ready to climb new heights and discover hidden treasures!",
+      "img": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne",
+      "created_at": "2021-03-04T12:34:56Z"
+    }
   ],
   "news": [
     {
@@ -100,6 +170,11 @@
       "id": 9,
       "userId": 10,
       "message": "I'm going to break for lunch"
+    },
+    {
+      "userId": 3,
+      "message": "I created this chat box, and i feel like Mark Zuckerberg -DeVante",
+      "id": 10
     }
   ],
   "events": [
@@ -153,12 +228,42 @@
     }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
-    { "id": 2, "userId": 5, "task": "Count to 1 million", "isComplete": true },
-    { "id": 3, "userId": 7, "task": "Take a hike", "isComplete": false },
-    { "id": 4, "userId": 3, "task": "Kick Rocks", "isComplete": true },
-    { "id": 5, "userId": 9, "task": "Clear the Amazon Rain Forest", "isComplete": false },
-    { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "task": "Count to 1 million",
+      "isComplete": true
+    },
+    {
+      "id": 3,
+      "userId": 7,
+      "task": "Take a hike",
+      "isComplete": false
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "task": "Kick Rocks",
+      "isComplete": true
+    },
+    {
+      "id": 5,
+      "userId": 9,
+      "task": "Clear the Amazon Rain Forest",
+      "isComplete": false
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "task": "Clean the shingles",
+      "isComplete": true
+    }
   ],
   "images": [
     {
