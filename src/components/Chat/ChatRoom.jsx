@@ -47,7 +47,8 @@ export const ChatRoom = () => {
   };
 
   return (
-    <div className="chat-room">
+    <div className='wrapper-center'>
+       <div className="chat-room">
       <div className="chat-history">
         {messages.map((msg) => (
           <div key={msg.id} className="chat-message">
@@ -86,6 +87,8 @@ export const ChatRoom = () => {
         />
         <button type="submit">Send</button>
       </form>
+    </div> 
     </div>
+    
   );
 };
