@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createNewEvent } from "../services/eventService.jsx";
 import { useNavigate } from "react-router-dom";
+import "./NewEvent.css"
 
 
 
@@ -35,6 +36,8 @@ export const NewEvent = ({ currentUser }) => {
     }
 
     return (
+
+
         <div>
             <form>
                 <h2>New Event</h2>
@@ -44,11 +47,10 @@ export const NewEvent = ({ currentUser }) => {
                         placeholder="Name"
                         onChange={(changeEvent) => {
                             const eventCopy = { ...newEvent };
-                            eventCopy.name = changeEvent.target.value
-                            setNewEvent(eventCopy)
+                            eventCopy.name = changeEvent.target.value;
+                            setNewEvent(eventCopy);
                         }}
-                    >
-                    </input>
+                    />
                 </fieldset>
                 <fieldset>
                     <input
@@ -56,11 +58,10 @@ export const NewEvent = ({ currentUser }) => {
                         placeholder="Location"
                         onChange={(changeEvent) => {
                             const eventCopy = { ...newEvent };
-                            eventCopy.location = changeEvent.target.value
-                            setNewEvent(eventCopy)
+                            eventCopy.location = changeEvent.target.value;
+                            setNewEvent(eventCopy);
                         }}
-                    >
-                    </input>
+                    />
                 </fieldset>
                 <fieldset>
                     <input
@@ -68,20 +69,18 @@ export const NewEvent = ({ currentUser }) => {
                         placeholder="Event Date"
                         onChange={(changeEvent) => {
                             const eventCopy = { ...newEvent };
-                            eventCopy.eventDate = changeEvent.target.value
-                            setNewEvent(eventCopy)
+                            eventCopy.eventDate = changeEvent.target.value;
+                            setNewEvent(eventCopy);
                         }}
-                    >
-                    </input>
+                    />
                 </fieldset>
                 <fieldset>
                     <div>
-                        <button onClick={handleSave} >Save Event</button>
+                        <button onClick={handleSave}>Save Event</button>
                     </div>
                 </fieldset>
             </form>
-        </div >
+        </div>
 
-    )
-
-}
+    );
+};
