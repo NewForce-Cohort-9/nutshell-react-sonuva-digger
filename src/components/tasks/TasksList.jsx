@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import {
   getAllUncompletedTasksByUserId,
+  getAllTasksByUserId,
   updateTask,
 } from "../../services/taskService";
 import { Button } from "reactstrap";
@@ -15,6 +16,8 @@ import EditTask from "./EditTask";
 
 export default function TasksList({ currentUser }) {
   const [userTasks, setUserTasks] = useState([]);
+  const [completedTasks, setCompletedTasks] = useState([]);
+
   const [activeTaskIndex, setActiveTaskIndex] = useState(null);
   const [activeTaskId, setActiveTaskId] = useState(null);
   const [isEditTaskOpen, setIsEditTaskOpen] = useState(false);
@@ -31,14 +34,31 @@ export default function TasksList({ currentUser }) {
   };
 
   const getAndSetUserTasks = async () => {
-    const allUserUncompletedTasks = await getAllUncompletedTasksByUserId(
-      currentUser.id
-    );
-    const tasksWithIndex = allUserUncompletedTasks.map((task, index) => ({
-      ...task,
-      index,
-    }));
-    setUserTasks(tasksWithIndex);
+    const allTasks = await getAllTasksByUserId(currentUser.id);
+    // const tasksWithIndex = allUserUncompletedTasks.map((task, index) => ({
+    //   ...task,
+    //   index,
+    // }));
+    const uncompletedTasks = allTasks
+      .filter((task) => !task.isComplete)
+      .map((task, index) => ({
+        ...task,
+        index,
+      }));
+
+    const completedTasks = allTasks
+      .filter((task) => task.isComplete)
+      .map((task, index) => ({
+        ...task,
+        index,
+      }));
+
+    console.log("un", uncompletedTasks);
+    console.log("complete", completedTasks);
+
+    setUserTasks(uncompletedTasks);
+    setCompletedTasks(completedTasks);
+
     setDidTaskAction(false);
   };
 
@@ -67,24 +87,61 @@ export default function TasksList({ currentUser }) {
         />
       )}
 
-      <div className="tasks-list">
-        {userTasks.map((task) => {
-          return (
-            <Task
-              key={task.id}
-              task={task}
-              toggleEditModal={toggleEditModal}
-              callMarkTaskComplete={callMarkTaskComplete}
-            />
-          );
-        })}
-        <Button style={{ width: "100%" }} onClick={onNewTaskClick}>
-          Add a new task
-          <span style={{ paddingLeft: "0.5rem" }}>
-            <AddIcon size={12} />
-          </span>
-        </Button>
-      </div>
+      <section className="tasks-section">
+        <div className="tasks-section-inner">
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <h1 style={{ padding: "1rem 0 2rem 0", color: "#FFF" }}>
+              Uncompleted Tasks
+            </h1>
+            <div className="tasks-list">
+              {userTasks.map((task) => {
+                return (
+                  <Task
+                    key={task.id}
+                    task={task}
+                    toggleEditModal={toggleEditModal}
+                    callMarkTaskComplete={callMarkTaskComplete}
+                  />
+                );
+              })}
+              <Button style={{ width: "100%" }} onClick={onNewTaskClick}>
+                Add a new task
+                <span style={{ paddingLeft: "0.5rem" }}>
+                  <AddIcon size={12} />
+                </span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="tasks-section">
+        <div className="tasks-section-inner">
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <h1 style={{ padding: "1rem 0 2rem 0", color: "#FFF" }}>
+              Completed Tasks
+            </h1>
+            <div className="tasks-list">
+              {completedTasks.map((task) => {
+                return (
+                  <Task
+                    key={task.id}
+                    task={task}
+                    toggleEditModal={toggleEditModal}
+                    callMarkTaskComplete={callMarkTaskComplete}
+                  />
+                );
+              })}
+              <Button style={{ width: "100%" }} onClick={onNewTaskClick}>
+                Add a new task
+                <span style={{ paddingLeft: "0.5rem" }}>
+                  <AddIcon size={12} />
+                </span>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
