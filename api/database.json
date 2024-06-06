@@ -240,37 +240,71 @@
       "id": 1,
       "userId": 3,
       "task": "Take out garbage",
-      "isComplete": false
+      "isComplete": true,
+      "completionDate": "2024-08-12T03:06:27.975Z"
     },
     {
       "id": 2,
-      "userId": 5,
-      "task": "Count to 1 million",
-      "isComplete": true
+      "userId": 3,
+      "task": "Count to 2 million",
+      "completionDate": "2024-08-13T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 3,
-      "userId": 7,
+      "userId": 3,
       "task": "Take a hike",
-      "isComplete": false
+      "isComplete": false,
+      "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
       "id": 4,
       "userId": 3,
-      "task": "Kick Rocks",
-      "isComplete": true
+      "task": "Kick Rocks downstairs",
+      "completionDate": "2024-08-17T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 5,
       "userId": 9,
       "task": "Clear the Amazon Rain Forest",
-      "isComplete": false
+      "isComplete": false,
+      "completionDate": "2024-06-05T19:13:19.621Z"
     },
     {
       "id": 6,
       "userId": 1,
       "task": "Clean the shingles",
+      "isComplete": false,
+      "completionDate": "2024-06-05T19:13:19.621Z"
+    },
+    {
+      "userId": 3,
+      "task": "eat macaroni",
+      "completionDate": "2024-06-29T00:00:00.000Z",
+      "isComplete": true,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "task": "eat a bbq lol",
+      "completionDate": "2024-07-06T00:00:00.000Z",
       "isComplete": true
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "task": "eat poison",
+      "completionDate": "2024-06-29T00:00:00.000Z",
+      "isComplete": true
+    },
+    {
+      "userId": 3,
+      "task": "my new task",
+      "completionDate": "2024-06-15T00:00:00.000Z",
+      "isComplete": false,
+      "id": 10
     }
   ],
   "images": [
