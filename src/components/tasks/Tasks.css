@@ -5,12 +5,13 @@
   gap: 8rem;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 }
 
 .tasks-section {
   position: relative;
   min-width: 400px;
-  /* margin: 0 auto; */
+  align-self: flex-start;
 }
 
 .tasks-section-inner {

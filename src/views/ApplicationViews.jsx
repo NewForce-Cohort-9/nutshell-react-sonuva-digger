@@ -28,10 +28,7 @@ export default function ApplicationViews() {
           index
           element={<span style={{ color: "black" }}>Splash page: TODO</span>}
         />
-        <Route
-          path="news"
-          element={<News currentUser={currentUser} />}
-        ></Route>
+        <Route path="news" element={<News currentUser={currentUser} />}></Route>
         <Route path="events" element={<span>EVENTS: TODO </span>} />
         <Route
           path="tasks"
