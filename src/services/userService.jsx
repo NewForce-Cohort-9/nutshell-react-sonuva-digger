@@ -13,4 +13,3 @@ export const getUserByEmail = (email) => {
       body: JSON.stringify(user),
     }).then((res) => res.json())
   }
-  

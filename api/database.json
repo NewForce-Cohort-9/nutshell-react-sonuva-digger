@@ -85,7 +85,7 @@
       "url": "https://www.quantamagazine.org/newfound-wormhole-allows-information-to-escape-black-holes-20171023/",
       "title": "Wormholes Allow Information to Escape Black Holes",
       "synopsis": "Check out this recent discovery about Wormholes",
-      "img": ""
+      "img": "https://d2r55xnwy6nx47.cloudfront.net/uploads/2017/10/wormhole_2880x1620.jpg"
     },
     {
       "id": 2,
@@ -109,7 +109,7 @@
       "url": "https://www.quantamagazine.org/insects-and-other-animals-have-consciousness-experts-declare-20240419/",
       "title": "Insects and Other Animals Have Consciousness, Experts Declare",
       "synopsis": "Check out this recent discovery about Insects",
-      "img": ""
+      "img": "https://d2r55xnwy6nx47.cloudfront.net/uploads/2024/04/AnimalConsciousness-crTranTheNgoc_Shutterstock-Lede-scaled.webp"
     },
     {
       "id": 5,
@@ -125,7 +125,7 @@
       "url": "https://www.mavtv.com/athletes/ryan-anderson",
       "title": "Ryan Anderson: The Legacy of Son-Uva Digger",
       "synopsis": "Check out this recent discovery about Ryan Anderson",
-      "img": ""
+      "img": "https://images.squarespace-cdn.com/content/v1/63c2e8ac6699b1595ac63c12/60e085fc-2496-451c-9028-6333bb6bd33a/MJ2023_MJS2_20230107_SanDiegoCA_3446-Edit.jpg?format=1500w"
     }
   ],
   "messages": [
@@ -340,6 +340,18 @@
       "id": 9,
       "userId": 10,
       "loggedInUserId": 3
+    }
+  ],
+  "saved": [
+    {
+      "id": 1,
+      "newsId": 1,
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "newsId": 2,
+      "userId": 1
     }
   ]
 }
