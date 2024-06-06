@@ -14,7 +14,7 @@ function NavBar() {
   }
 
   return (
-    <div className="navbar-container">
+      <div className="navbar-container">
       <Nav pills>
         <NavItem className="navbar-logo">
           <NavLink
