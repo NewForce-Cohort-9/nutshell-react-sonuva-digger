@@ -226,7 +226,7 @@
       "userId": 3,
       "task": "Count to 2 million",
       "completionDate": "2024-08-13T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 3,
