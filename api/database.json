@@ -222,9 +222,9 @@
     {
       "id": 1,
       "userId": 3,
-      "task": "Take out garbage",
-      "isComplete": true,
-      "completionDate": "2024-08-12T03:06:27.975Z"
+      "task": "Take out garbage again",
+      "completionDate": "2024-08-12T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 2,
@@ -237,7 +237,7 @@
       "id": 3,
       "userId": 3,
       "task": "Take a hike",
-      "isComplete": true,
+      "isComplete": false,
       "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
@@ -245,7 +245,7 @@
       "userId": 3,
       "task": "Kick Rocks downstairs",
       "completionDate": "2024-08-17T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 5,
@@ -273,14 +273,14 @@
       "userId": 3,
       "task": "eat a bbq lol",
       "completionDate": "2024-07-06T00:00:00.000Z",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": 9,
       "userId": 3,
       "task": "eat poison",
       "completionDate": "2024-06-29T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "userId": 3,
@@ -293,7 +293,7 @@
       "userId": 3,
       "task": "Mow Tom Brady's lawn",
       "completionDate": "2024-06-15T00:00:00.000Z",
-      "isComplete": false,
+      "isComplete": true,
       "id": 11
     },
     {

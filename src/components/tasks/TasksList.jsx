@@ -140,7 +140,7 @@ export default function TasksList({ currentUser }) {
             </h1>
             <div className="tasks-list">
               {completedTasks
-                .sort((a, b) => b.id - a.id)
+                .sort((a, b) => a.id - b.id)
                 .map((task) => {
                   return (
                     <Task
