@@ -5,7 +5,7 @@
       "username": "Ryan",
       "email": "ryananderson@sonuva.com",
       "bio": "Hi, I'm Ryan Anderson, the proud driver of the Son Uva Digger truck. I've been living my dream, bringing the thrill of monster truck driving to fans all around the world. When I'm not behind the wheel, you can find me tinkering with engines and spending time with my family. Ready to rev up and crush some cars!",
-      "img": "https://images.squarespace-cdn.com/content/v1/63c2e8ac6699b1595ac63c12/1678744875412-73ANZAHGKXR1V3N2PRN3/MJ22_20221117_Summit_1186_Ryan%2BAnderson.jpg?format=1000w",
+      "img": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png",
       "created_at": "2020-06-04T12:34:56Z"
     },
     {
@@ -176,11 +176,6 @@
       "id": 9,
       "userId": 10,
       "message": "I'm going to break for lunch"
-    },
-    {
-      "userId": 3,
-      "message": "I created this chat box, and i feel like Mark Zuckerberg -DeVante",
-      "id": 10
     }
   ],
   "events": [
@@ -259,22 +254,22 @@
     {
       "id": 1,
       "userId": 3,
-      "task": "Take out garbage",
-      "isComplete": true,
-      "completionDate": "2024-08-12T03:06:27.975Z"
+      "task": "Take out garbage again",
+      "completionDate": "2024-08-12T00:00:00.000Z",
+      "isComplete": false
     },
     {
       "id": 2,
       "userId": 3,
       "task": "Count to 2 million",
       "completionDate": "2024-08-13T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 3,
       "userId": 3,
       "task": "Take a hike",
-      "isComplete": false,
+      "isComplete": true,
       "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
@@ -317,7 +312,7 @@
       "userId": 3,
       "task": "eat poison",
       "completionDate": "2024-06-29T00:00:00.000Z",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "userId": 3,
@@ -325,6 +320,20 @@
       "completionDate": "2024-06-15T00:00:00.000Z",
       "isComplete": false,
       "id": 10
+    },
+    {
+      "userId": 3,
+      "task": "Mow Tom Brady's lawn",
+      "completionDate": "2024-06-15T00:00:00.000Z",
+      "isComplete": false,
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "task": "Mow Lonzo Ball's lawn",
+      "completionDate": "2024-06-22T00:00:00.000Z",
+      "isComplete": true,
+      "id": 12
     }
   ],
   "images": [

@@ -1,11 +1,17 @@
 .tasks-container {
   margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .tasks-section {
   position: relative;
-  max-width: 400px;
-  margin: 0 auto;
+  min-width: 400px;
+  align-self: flex-start;
 }
 
 .tasks-section-inner {
@@ -107,6 +113,7 @@
   height: 100%;
   width: auto;
   align-items: center;
+  cursor: pointer;
 }
 
 /* checkbox */
