@@ -237,7 +237,7 @@
       "id": 3,
       "userId": 3,
       "task": "Take a hike",
-      "isComplete": false,
+      "isComplete": true,
       "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
@@ -265,7 +265,7 @@
       "userId": 3,
       "task": "eat macaroni",
       "completionDate": "2024-06-29T00:00:00.000Z",
-      "isComplete": true,
+      "isComplete": false,
       "id": 7
     },
     {
@@ -280,7 +280,7 @@
       "userId": 3,
       "task": "eat poison",
       "completionDate": "2024-06-29T00:00:00.000Z",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "userId": 3,
@@ -300,7 +300,7 @@
       "userId": 3,
       "task": "Mow Lonzo Ball's lawn",
       "completionDate": "2024-06-22T00:00:00.000Z",
-      "isComplete": false,
+      "isComplete": true,
       "id": 12
     }
   ],

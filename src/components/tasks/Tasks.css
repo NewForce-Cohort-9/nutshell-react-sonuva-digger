@@ -113,6 +113,7 @@
   height: 100%;
   width: auto;
   align-items: center;
+  cursor: pointer;
 }
 
 /* checkbox */
