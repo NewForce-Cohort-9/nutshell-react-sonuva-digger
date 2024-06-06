@@ -38,7 +38,7 @@ export const NewEvent = ({ currentUser }) => {
     return (
 
 
-        <div>
+        <div classname="bigdiv">
             <form>
                 <h2>New Event</h2>
                 <fieldset>
@@ -80,7 +80,7 @@ export const NewEvent = ({ currentUser }) => {
                     </div>
                 </fieldset>
             </form>
-        </div>
+        </div >
 
     );
 };
