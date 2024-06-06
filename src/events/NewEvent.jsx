@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { createNewEvent } from "../services/eventService.jsx";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 
 
-export const NewEvent = () => {
+export const NewEvent = ({ currentUser }) => {
 
     const [newEvent, setNewEvent] = useState({
         name: "",
@@ -14,17 +15,22 @@ export const NewEvent = () => {
         location: ""
     });
 
+    const navigate = useNavigate();
+
     const handleSave = (saveEvent) => {
         saveEvent.preventDefault();
 
         const eventToDatabase = {
             name: newEvent.name,
-            userId: 1,
+            userId: currentUser.id,
             eventDate: newEvent.eventDate,
             location: newEvent.location
         }
 
-        createNewEvent(eventToDatabase);
+        createNewEvent(eventToDatabase).then(() => {
+            navigate("/events");
+
+        })
 
     }
 

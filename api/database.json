@@ -226,20 +226,52 @@
       "eventDate": "2024-06-08",
       "location": "Hico, WV",
       "id": 9
+    },
+    {
+      "name": "Escape From LA",
+      "userId": 3,
+      "eventDate": "2024-06-22",
+      "location": "Los Angeles",
+      "id": 10
     }
   ],
   "tasks": [
-    { "id": 1, "userId": 3, "task": "Take out garbage", "isComplete": false },
-    { "id": 2, "userId": 5, "task": "Count to 1 million", "isComplete": true },
-    { "id": 3, "userId": 7, "task": "Take a hike", "isComplete": false },
-    { "id": 4, "userId": 3, "task": "Kick Rocks", "isComplete": true },
+    {
+      "id": 1,
+      "userId": 3,
+      "task": "Take out garbage",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "task": "Count to 1 million",
+      "isComplete": true
+    },
+    {
+      "id": 3,
+      "userId": 7,
+      "task": "Take a hike",
+      "isComplete": false
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "task": "Kick Rocks",
+      "isComplete": true
+    },
     {
       "id": 5,
       "userId": 9,
       "task": "Clear the Amazon Rain Forest",
       "isComplete": false
     },
-    { "id": 6, "userId": 1, "task": "Clean the shingles", "isComplete": true }
+    {
+      "id": 6,
+      "userId": 1,
+      "task": "Clean the shingles",
+      "isComplete": true
+    }
   ],
   "images": [
     {
