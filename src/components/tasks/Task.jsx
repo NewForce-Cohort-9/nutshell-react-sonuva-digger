@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { ChecklistIcon, DateIcon, EditPencil } from "../../assets/icons";
 
 /*

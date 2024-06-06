@@ -1,7 +1,11 @@
-// ChatRoom.jsx
+/*
+ **Author: DeVante Farmer
+ **Purpose: Provides a visual and functionality for a live chat room
+ */
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import './chat.css';
-import { getMessages, postMessage } from './ChatRoomServices.jsx';
+import { getMessages, postMessage, updateMessage } from './ChatRoomServices.jsx';
 
 export const ChatRoom = () => {
   const [messages, setMessages] = useState([]);
@@ -25,7 +29,7 @@ export const ChatRoom = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!newMessage.trim()) return;
+    if (!newMessage.trim()) return; /*.trim() Removes the leading and trailing white space and line terminator characters from a string.*/
 
     await postMessage(loggedInUser.id, newMessage);
     setNewMessage('');
