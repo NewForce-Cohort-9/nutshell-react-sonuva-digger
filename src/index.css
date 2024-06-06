@@ -5,15 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #003459;
+  background-color: var(--tertiary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary: #00A8E8;
-  --secondary: #007EA7;
+  --primary: #00a8e8;
+  --secondary: #007ea7;
   --tertiary: #003459;
 }
 
@@ -27,12 +27,11 @@ a:hover {
 }
 
 body {
-  background-color: var(--tertiary) !important;
+  margin: 0;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--tertiary) !important;
 }
 
 h1 {
@@ -70,4 +69,12 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.wrapper-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
