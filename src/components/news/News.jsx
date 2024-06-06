@@ -33,7 +33,7 @@ export const News = ({ currentUser }) => {
             <div className="card m-3 mw-100" key={news.id}>
               <div className="card-body">
                 <a href={news.url}>
-                  <h5 className="card-title">{news.title}</h5>
+                  <h5 className="card-title">{news.title} {news?.user?.name}</h5>
                 </a>
                 <p className="card-text">{news.synopsis}</p>
                 <p className="card-text">

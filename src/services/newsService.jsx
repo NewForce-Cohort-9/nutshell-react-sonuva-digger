@@ -1,5 +1,5 @@
 export const getAllNews = () => {
-  return fetch("http://localhost:8088/news").then((res) => res.json());
+  return fetch("http://localhost:8088/news?_expand=user").then((res) => res.json());
 };
 
 export const getSavedNews = (loggedInUserId) => {
