@@ -11,12 +11,11 @@ import { ActivateChat } from "../components/Chat/ActivateChat.jsx";
 import { Splash } from "../components/Splash/Splash.jsx";
 
 export default function ApplicationViews() {
-
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
     const localUser = localStorage.getItem("loggedInUser");
-    const parsedUser = JSON.parse(localUser)
+    const parsedUser = JSON.parse(localUser);
     setCurrentUser(parsedUser);
   }, []);
 
@@ -31,16 +30,22 @@ export default function ApplicationViews() {
           </>
         }
       >
+        <Route index element={<Splash />} />
+        <Route path="news">
+          <Route index element={<News currentUser={currentUser} />} />
+          <Route
+            path="create"
+            element={<CreateNewsForm currentUser={currentUser} />}
+          />
+        </Route>
         <Route
-          index
-          element={<span style={{ color: "black" }}>Splash page: TODO</span>}
+          path="events"
+          element={<EventList currentUser={currentUser} />}
         />
         <Route
-          path="news"
-          element={<News currentUser={currentUser} />}
-        ></Route>
-         <Route path="events" element={<EventList currentUser={currentUser} />} />
-         <Route path="newevent" element={<NewEvent currentUser={currentUser} />} />
+          path="newevent"
+          element={<NewEvent currentUser={currentUser} />}
+        />
         <Route
           path="tasks"
           element={<TasksContainer currentUser={currentUser} />}
