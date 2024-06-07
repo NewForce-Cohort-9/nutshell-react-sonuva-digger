@@ -4,70 +4,70 @@
       "id": 1,
       "username": "Ryan",
       "email": "ryananderson@sonuva.com",
-      "avatar": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png",
+      "img": "https://www.monsterjam.com/wp-content/uploads/2023/11/Ryan-Anderson-Son-Uva-Digger.png",
       "created_at": "2020-06-04T12:34:56Z"
     },
     {
       "id": 2,
       "username": "Bob",
       "email": "bob@messageme.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.90745.1624117.jpg&type=tpdne",
       "created_at": "2020-07-04T12:34:56Z"
     },
     {
       "id": 3,
       "username": "Charlie",
       "email": "charlie@charliesemail.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.88960.1624117.jpg&type=tpdne",
       "created_at": "2020-08-04T12:34:56Z"
     },
     {
       "id": 4,
       "username": "Daisy",
       "email": "daisy@flowers.com",
-      "avatar": "https://cdnstorage.sendbig.com/unreal/female.webp",
+      "img": "https://cdnstorage.sendbig.com/unreal/female.webp",
       "created_at": "2020-09-04T12:34:56Z"
     },
     {
       "id": 5,
       "username": "Eve",
       "email": "eve@adam.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.88672.1624117.jpg&type=tpdne",
       "created_at": "2020-10-04T12:34:56Z"
     },
     {
       "id": 6,
       "username": "Frank",
       "email": "frank@ballpark.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.89246.1624117.jpg&type=tpdne",
       "created_at": "2020-11-04T12:34:56Z"
     },
     {
       "id": 7,
       "username": "Grace",
       "email": "grace@saving.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.89541.1624117.jpg&type=tpdne",
       "created_at": "2020-12-04T12:34:56Z"
     },
     {
       "id": 8,
       "username": "Hank",
       "email": "hank@hill.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.89760.1624117.jpg&type=tpdne",
       "created_at": "2021-01-04T12:34:56Z"
     },
     {
       "id": 9,
       "username": "Ivy",
       "email": "ivy@poison.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.90492.1624117.jpg&type=tpdne",
       "created_at": "2021-02-04T12:34:56Z"
     },
     {
       "id": 10,
       "username": "Jack",
       "email": "jack@andthebeanstock.com",
-      "avatar": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne",
+      "img": "https://api.unrealperson.com/image?name=image.90157.1624117.jpg&type=tpdne",
       "created_at": "2021-03-04T12:34:56Z"
     }
   ],
