@@ -3,6 +3,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import { News } from "../components/news/News.jsx";
 import NavBar from "../components/Nav/NavBar.jsx";
 import TasksContainer from "../components/tasks/TasksContainer.jsx";
+import { CreateNewsForm } from "../forms/CreateNews.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
@@ -27,10 +28,10 @@ export default function ApplicationViews() {
           index
           element={<span style={{ color: "black" }}>Splash page: TODO</span>}
         />
-        <Route
-          path="news"
-          element={<News currentUser={currentUser} />}
-        ></Route>
+        <Route path="news">
+          <Route index element={<News currentUser={currentUser} />} />
+          <Route path="create" element={<CreateNewsForm currentUser={currentUser} />} />
+        </Route>
         <Route path="events" element={<span>EVENTS: TODO </span>} />
         <Route
           path="tasks"
