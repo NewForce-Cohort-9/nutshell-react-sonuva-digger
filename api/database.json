@@ -256,7 +256,7 @@
       "userId": 3,
       "task": "Take out garbage again",
       "completionDate": "2024-08-12T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 2,

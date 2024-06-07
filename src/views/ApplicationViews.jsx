@@ -4,8 +4,8 @@ import { News } from "../components/news/News.jsx";
 import NavBar from "../components/Nav/NavBar.jsx";
 import { ChatRoom } from "../components/Chat/ChatRoom.jsx";
 import TasksContainer from "../components/tasks/TasksContainer.jsx";
-import { EventList } from "../events/EventList.jsx";
-import { NewEvent } from "../events/NewEvent.jsx";
+import { EventList } from "../components/events/EventList.jsx";
+import { NewEvent } from "../components/events/NewEvent.jsx";
 
 
 import { ActivateChat } from "../components/Chat/ActivateChat.jsx";

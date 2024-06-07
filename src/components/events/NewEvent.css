@@ -1,4 +1,4 @@
-body {
+.eventbody {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body {
     width: 100%;
 }
 
-form {
+.eventform {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@ form {
     background-color: #fff;
 }
 
-fieldset {
+.eventfieldset {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,14 +36,14 @@ fieldset {
     border: none;
 }
 
-input {
+.eventinput {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
-button {
+.eventbutton {
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
@@ -52,6 +52,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.eventbutton:hover {
     background-color: #0056b3;
 }

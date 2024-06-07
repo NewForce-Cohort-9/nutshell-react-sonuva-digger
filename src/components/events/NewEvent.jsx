@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createNewEvent } from "../services/eventService.jsx";
+import { createNewEvent } from "../../services/eventService.jsx";
 import { useNavigate } from "react-router-dom";
 import "./NewEvent.css"
 
@@ -38,11 +38,11 @@ export const NewEvent = ({ currentUser }) => {
     return (
 
 
-        <div classname="bigdiv">
-            <form>
+        <div className="eventbody" >
+            < form className="eventform" >
                 <h2>New Event</h2>
-                <fieldset>
-                    <input
+                <fieldset className="eventfieldset">
+                    <input className="eventinput"
                         type="text"
                         placeholder="Name"
                         onChange={(changeEvent) => {
@@ -52,8 +52,8 @@ export const NewEvent = ({ currentUser }) => {
                         }}
                     />
                 </fieldset>
-                <fieldset>
-                    <input
+                <fieldset className="eventfieldset">
+                    <input className="eventinput"
                         type="text"
                         placeholder="Location"
                         onChange={(changeEvent) => {
@@ -63,8 +63,8 @@ export const NewEvent = ({ currentUser }) => {
                         }}
                     />
                 </fieldset>
-                <fieldset>
-                    <input
+                <fieldset className="eventfieldset">
+                    <input className="eventinput"
                         type="date"
                         placeholder="Event Date"
                         onChange={(changeEvent) => {
@@ -74,12 +74,12 @@ export const NewEvent = ({ currentUser }) => {
                         }}
                     />
                 </fieldset>
-                <fieldset>
+                <fieldset className="eventfieldset">
                     <div>
-                        <button onClick={handleSave}>Save Event</button>
+                        <button className="eventbutton" onClick={handleSave}>Save Event</button>
                     </div>
                 </fieldset>
-            </form>
+            </form >
         </div >
 
     );
