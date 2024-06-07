@@ -6,9 +6,8 @@ import { ChatRoom } from "../components/Chat/ChatRoom.jsx";
 import TasksContainer from "../components/tasks/TasksContainer.jsx";
 import { EventList } from "../components/events/EventList.jsx";
 import { NewEvent } from "../components/events/NewEvent.jsx";
-
-
 import { ActivateChat } from "../components/Chat/ActivateChat.jsx";
+import { Splash } from "../components/Splash/Splash.jsx";
 
 export default function ApplicationViews() {
 
@@ -31,10 +30,7 @@ export default function ApplicationViews() {
           </>
         }
       >
-        <Route
-          index
-          element={<span style={{ color: "black" }}>Splash page: TODO</span>}
-        />
+        <Route index element={<Splash />} />
         <Route path="news" element={<News currentUser={currentUser} />} />
         <Route path="events" element={<EventList currentUser={currentUser} />} />
         <Route path="newevent" element={<NewEvent currentUser={currentUser} />} />
