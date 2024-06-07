@@ -181,81 +181,66 @@
   "events": [
     {
       "id": 1,
-      "name": "Hollywood Is Dead",
       "userId": 3,
       "eventDate": "June 5th, 2024",
       "location": "Hollywood, CA"
     },
     {
       "id": 2,
-      "name": "Hollywood Is Alive",
       "userId": 3,
       "eventDate": "June 24th, 2024",
       "location": "Hollywood, CA"
     },
     {
       "id": 3,
-      "name": "Summer Is A Wash",
       "userId": 1,
       "eventDate": "July 4th, 2024",
       "location": "Washington, D.C"
     },
     {
       "id": 4,
-      "name": "Bumfest",
       "userId": 6,
       "eventDate": "July 19th, 2024",
       "location": "Bumchuck, WV"
     },
     {
       "id": 5,
-      "name": "Who's Morgan? Fest",
       "userId": 4,
       "eventDate": "August 16th, 2024",
       "location": "Morgantown, WV"
     },
     {
       "id": 6,
-      "name": "Dubstyle in September",
       "userId": 10,
       "eventDate": "September 9th, 2024",
       "location": "Dublin, Ireland"
     },
     {
       "id": 7,
-      "name": "Money In The Bank Live PPV",
       "userId": 6,
       "eventDate": "September 23rd, 2024",
       "location": "Allentown, PA"
     },
     {
       "id": 8,
-      "name": "Wrestlemania",
       "userId": 8,
       "eventDate": "October 10th, 2024",
       "location": "Raleigh, NC"
     },
     {
-      "name": "Snake Plissken Presents: Escape from LA Fest",
-      "userId": 1,
-      "eventDate": "2024-06-08",
-      "location": "Hico, WV",
-      "id": 9
-    },
-    {
-      "name": "Escape From LA",
+      "name": "lol",
       "userId": 3,
-      "eventDate": "2024-06-22",
-      "location": "Los Angeles",
-      "id": 10
+      "eventDate": "2024-06-12",
+      "location": "",
+      "id": 9
     }
   ],
   "tasks": [
     {
       "id": 1,
       "userId": 3,
-      "task": "Take out garbage again",
-      "completionDate": "2024-08-12T00:00:00.000Z",
+      "task": "Take out garbage hehe",
+      "completionDate": "2024-09-07T00:00:00.000Z",
       "isComplete": true
     },
     {
@@ -269,7 +254,7 @@
       "id": 3,
       "userId": 3,
       "task": "Take a hike",
-      "isComplete": true,
+      "isComplete": false,
       "completionDate": "2024-08-15T03:06:27.975Z"
     },
     {
@@ -277,7 +262,7 @@
       "userId": 3,
       "task": "Kick Rocks downstairs",
       "completionDate": "2024-08-17T00:00:00.000Z",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 5,
@@ -305,7 +290,7 @@
       "userId": 3,
       "task": "eat a bbq lol",
       "completionDate": "2024-07-06T00:00:00.000Z",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": 9,
@@ -325,7 +310,7 @@
       "userId": 3,
       "task": "Mow Tom Brady's lawn",
       "completionDate": "2024-06-15T00:00:00.000Z",
-      "isComplete": false,
+      "isComplete": true,
       "id": 11
     },
     {
