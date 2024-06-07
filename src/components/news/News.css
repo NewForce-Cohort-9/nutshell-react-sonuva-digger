@@ -13,7 +13,7 @@
 .savedNewsBox {
     background-color: #007EA7;
     min-height: 100vh;
-    width: 100%;
+    width: 120%;
 }
 
 img {
@@ -22,6 +22,34 @@ img {
 }
 
 .subheading {
-    margin: .5em 0 0 1em;
+    margin: 0;
     color: white;
+}
+
+.headerbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title aside {
+    margin-left: 10px; /* Optional: Adjust the space between title and aside */
+    font-style: italic;
+    font-size: small;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+small.text-body-secondary:hover {
+    text-decoration: underline;
 }
