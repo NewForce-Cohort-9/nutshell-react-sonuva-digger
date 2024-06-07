@@ -1,0 +1,13 @@
+Form {
+    background-color: aliceblue;
+    margin: 6em 2em 2em 2em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.required {
+    color: red;
+    font-size: 10px;
+    float: right;
+    padding-left: 5px;
+}
