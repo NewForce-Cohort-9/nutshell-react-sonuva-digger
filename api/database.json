@@ -181,51 +181,73 @@
   "events": [
     {
       "id": 1,
+      "name": "Hollywood Is Dead",
       "userId": 3,
       "eventDate": "June 5th, 2024",
       "location": "Hollywood, CA"
     },
     {
       "id": 2,
+      "name": "Hollywood Is Alive",
       "userId": 3,
       "eventDate": "June 24th, 2024",
       "location": "Hollywood, CA"
     },
     {
       "id": 3,
+      "name": "Summer Is A Wash",
       "userId": 1,
       "eventDate": "July 4th, 2024",
       "location": "Washington, D.C"
     },
     {
       "id": 4,
+      "name": "Bumfest",
       "userId": 6,
       "eventDate": "July 19th, 2024",
       "location": "Bumchuck, WV"
     },
     {
       "id": 5,
+      "name": "Who's Morgan? Fest",
       "userId": 4,
       "eventDate": "August 16th, 2024",
       "location": "Morgantown, WV"
     },
     {
       "id": 6,
+      "name": "Dubstyle in September",
       "userId": 10,
       "eventDate": "September 9th, 2024",
       "location": "Dublin, Ireland"
     },
     {
       "id": 7,
+      "name": "Money In The Bank Live PPV",
       "userId": 6,
       "eventDate": "September 23rd, 2024",
       "location": "Allentown, PA"
     },
     {
       "id": 8,
+      "name": "Wrestlemania",
       "userId": 8,
       "eventDate": "October 10th, 2024",
       "location": "Raleigh, NC"
+    },
+    {
+      "name": "Snake Plissken Presents: Escape from LA Fest",
+      "userId": 1,
+      "eventDate": "2024-06-08",
+      "location": "Hico, WV",
+      "id": 9
+    },
+    {
+      "name": "Escape From LA",
+      "userId": 3,
+      "eventDate": "2024-06-22",
+      "location": "Los Angeles",
+      "id": 10
     }
   ],
   "tasks": [
