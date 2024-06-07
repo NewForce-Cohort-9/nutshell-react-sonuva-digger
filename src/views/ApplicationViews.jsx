@@ -4,14 +4,20 @@ import { News } from "../components/news/News.jsx";
 import NavBar from "../components/Nav/NavBar.jsx";
 import { ChatRoom } from "../components/Chat/ChatRoom.jsx";
 import TasksContainer from "../components/tasks/TasksContainer.jsx";
+import { EventList } from "../components/events/EventList.jsx";
+import { NewEvent } from "../components/events/NewEvent.jsx";
+
+
 import { ActivateChat } from "../components/Chat/ActivateChat.jsx";
 
 export default function ApplicationViews() {
+
   const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
     const localUser = localStorage.getItem("loggedInUser");
-    setCurrentUser(JSON.parse(localUser));
+    const parsedUser = JSON.parse(localUser)
+    setCurrentUser(parsedUser);
   }, []);
 
   return (
@@ -29,8 +35,9 @@ export default function ApplicationViews() {
           index
           element={<span style={{ color: "black" }}>Splash page: TODO</span>}
         />
-        <Route path="news" element={<News currentUser={currentUser} />}></Route>
-        <Route path="events" element={<span>EVENTS: TODO </span>} />
+        <Route path="news" element={<News currentUser={currentUser} />} />
+        <Route path="events" element={<EventList currentUser={currentUser} />} />
+        <Route path="newevent" element={<NewEvent currentUser={currentUser} />} />
         <Route
           path="tasks"
           element={<TasksContainer currentUser={currentUser} />}
