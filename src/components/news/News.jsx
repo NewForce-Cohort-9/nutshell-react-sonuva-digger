@@ -125,7 +125,7 @@ export const News = ({ currentUser }) => {
                     className="text-body-secondary"
                     onClick={(event) => handleSaveNews(event, news.id)}
                   >
-                    {saveClickedMap[news.id] ? "saved!" : "save"}
+                    {saveClickedMap[news.id] ? <i>saved!</i> : "save"}
                   </small>
                 </p>
               </div>

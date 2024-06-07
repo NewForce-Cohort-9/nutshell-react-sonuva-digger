@@ -49,3 +49,7 @@ img {
 a {
     text-decoration: none !important;
 }
+
+small.text-body-secondary:hover {
+    text-decoration: underline;
+}
