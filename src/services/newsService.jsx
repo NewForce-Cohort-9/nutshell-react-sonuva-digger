@@ -18,6 +18,12 @@ export const createNewsArticle = (news) => {
   });
 };
 
+export const deleteCreatedNewsArticle = (news) => {
+  return fetch(`http://localhost:8088/news/${news.id}`, {
+    method: "DELETE",
+  });
+};
+
 export const saveNewsArticle = (saved) => {
   return fetch(`http://localhost:8088/saved`, {
     method: "POST",
@@ -25,5 +31,11 @@ export const saveNewsArticle = (saved) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(saved),
+  });
+};
+
+export const deleteSavedNewsArticle = (saved) => {
+  return fetch(`http://localhost:8088/saved/${saved.id}`, {
+    method: "DELETE",
   });
 };

@@ -3,44 +3,72 @@ import { useEffect, useState } from "react";
 import {
   getAllNews,
   getSavedNews,
+  deleteSavedNewsArticle,
   saveNewsArticle,
+  deleteCreatedNewsArticle,
 } from "../../services/newsService.jsx";
 import { Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
-import { getUserById } from "../../services/userService.jsx";
 
 export const News = ({ currentUser }) => {
   const [allNews, setAllNews] = useState([]);
   const [savedNews, setSavedNews] = useState([]);
+  const [saveClickedMap, setSaveClickedMap] = useState({});
   const [users, setUsers] = useState([]);
-  const [saved, setSaved] = useState({
-    newsId: 0,
-    userId: currentUser.id,
-  });
+  const [deleted, setDeleted] = useState(false);
+  const [createdNews, setCreatedNews] = useState([]);
   const navigate = useNavigate();
 
-  const handleSaveNews = (event) => {
+  const handleSaveNews = (event, newsId) => {
     event.preventDefault();
-    {
-      const newSavedArticle = {
-        newsId: saved.newsId,
-        userId: currentUser.id,
-      };
+    const newSavedArticle = {
+      newsId,
+      userId: currentUser.id,
+    };
 
-      saveNewsArticle(newSavedArticle).then(() => {
-        navigate("/news");
-      });
+    const isAlreadySaved = savedNews.some((saved) => saved.newsId === newsId);
+    if (isAlreadySaved) {
+      window.alert("This article is already saved.");
+      return;
     }
+
+    saveNewsArticle(newSavedArticle).then(() => {
+      getSavedNews(currentUser.id).then((savedNewsArray) => {
+        setSavedNews(savedNewsArray);
+      });
+      navigate("/news");
+
+      setSaveClickedMap((prevState) => ({
+        ...prevState,
+        [newsId]: true,
+      }));
+    });
   };
 
-  // useEffect to fetch news and set to allNews on initial render
+  const handleUnsaveNews = (event, saved) => {
+    event.preventDefault();
+    deleteSavedNewsArticle(saved).then(() => {
+      setSavedNews((prevSavedNews) =>
+        prevSavedNews.filter(
+          (savedArticle) => savedArticle.news?.id !== saved.news?.id
+        )
+      );
+    });
+  };
+
+  const handleDeleteCreatedNewsArticle = (event, news) => {
+    event.preventDefault();
+    deleteCreatedNewsArticle(news).then(() => {
+      setDeleted(!deleted); // Toggle the deleted state to trigger re-render
+    });
+  };
 
   useEffect(() => {
     getAllNews().then((newsArray) => {
       setAllNews(newsArray);
       console.log("News set!");
     });
-  }, []);
+  }, [deleted]);
 
   useEffect(() => {
     if (currentUser) {
@@ -73,9 +101,15 @@ export const News = ({ currentUser }) => {
         </div>
         {allNews.map((news) => {
           const sharedBy =
-            news.user.id === currentUser.id
-              ? "you"
-              : getUsernameById(news.user.id);
+            news.user.id === currentUser.id ? (
+              <Button
+                onClick={(event) => handleDeleteCreatedNewsArticle(event, news)}
+              >
+                Delete
+              </Button>
+            ) : (
+              "Shared by " + getUsernameById(news.user.id)
+            );
           return (
             <div className="card m-3 mw-100" key={news.id}>
               <div className="card-body">
@@ -85,16 +119,16 @@ export const News = ({ currentUser }) => {
                   ) : (
                     <span>{news.title}</span>
                   )}
-                  <aside>Shared by {sharedBy}</aside>
+                  <aside>{sharedBy}</aside>
                 </div>
 
                 <p className="card-text">{news.synopsis}</p>
                 <p className="card-text">
                   <small
                     className="text-body-secondary"
-                    onClick={handleSaveNews}
+                    onClick={(event) => handleSaveNews(event, news.id)}
                   >
-                    save
+                    {saveClickedMap[news.id] ? "saved!" : "save"}
                   </small>
                 </p>
               </div>
@@ -129,16 +163,21 @@ export const News = ({ currentUser }) => {
               <div className="card m-3 mw-100" key={saved.news.id}>
                 <div className="card-body">
                   <div className="card-title">
-                    <a href={saved.news.url}>{saved.news.title}</a>
+                    {saved.news.url ? (
+                      <a href={saved.news.url}>{saved.news.title}</a>
+                    ) : (
+                      <span>{saved.news.title}</span>
+                    )}
                     <aside>Shared by {sharedBy}</aside>
                   </div>
-
-                  <a href={saved.news.url}>
-                    <h5 className="card-title">{saved.news.title}</h5>
-                  </a>
                   <p className="card-text">{saved.news.synopsis}</p>
                   <p className="card-text">
-                    <small className="text-body-secondary">unsave</small>
+                    <small
+                      className="text-body-secondary"
+                      onClick={(event) => handleUnsaveNews(event, saved)}
+                    >
+                      unsave
+                    </small>
                   </p>
                 </div>
                 {saved.news.img !== "" && (
