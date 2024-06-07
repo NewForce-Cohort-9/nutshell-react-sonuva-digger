@@ -66,7 +66,6 @@ export const News = ({ currentUser }) => {
   useEffect(() => {
     getAllNews().then((newsArray) => {
       setAllNews(newsArray);
-      console.log("News set!");
     });
   }, [deleted]);
 
@@ -74,7 +73,6 @@ export const News = ({ currentUser }) => {
     if (currentUser) {
       getSavedNews(currentUser.id).then((savedNewsArray) => {
         setSavedNews(savedNewsArray);
-        console.log("Saved news set!");
       });
     }
   }, [currentUser]);
@@ -84,7 +82,6 @@ export const News = ({ currentUser }) => {
       .then((res) => res.json())
       .then((userArray) => {
         setUsers(userArray);
-        console.log("Users set!");
       });
   }, []);
 
