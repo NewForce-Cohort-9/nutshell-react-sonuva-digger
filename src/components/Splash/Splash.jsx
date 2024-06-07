@@ -17,7 +17,7 @@ export const Splash = () => {
                 <div className="mini">
                     <h2>
                         <div className="splash-icon">
-                            News <NewsIcon />
+                            News! <NewsIcon />
                             Events! <DateIcon />
                             Tasks! <ChecklistIcon />
                             LiveChat! <ChatIcon />
