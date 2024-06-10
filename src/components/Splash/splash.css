@@ -1,12 +1,13 @@
 .splash {
-  border: 5px solid cornsilk;
-  border-radius: 10px;
-  margin: 2rem auto;
-  width: 60%;
-  text-align: center;
-  padding: 10rem;
-  background-color: var(--tertiary);
-  margin-top: 100px;
+    border: 5px solid cornsilk;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 60%;
+    text-align: center;
+    padding: 5rem 3rem;
+    background-color: #003459;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .splash > h1 {
@@ -15,6 +16,41 @@
   color: cornsilk;
 }
 
-.splash > div {
-  font-style: italic;
+.splash-subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    color: cornsilk;
+}
+
+.mini {
+    margin-top: 2rem;
+}
+
+.mini > h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: cornsilk;
+}
+
+.splash-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.splash-icon > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.splash-icon svg {
+    margin-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
 }
