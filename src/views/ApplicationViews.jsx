@@ -9,6 +9,7 @@ import { EventList } from "../components/events/EventList.jsx";
 import { NewEvent } from "../components/events/NewEvent.jsx";
 import { ActivateChat } from "../components/Chat/ActivateChat.jsx";
 import { Splash } from "../components/Splash/Splash.jsx";
+import { Profile } from "../components/profile/Profile.jsx";
 
 export default function ApplicationViews() {
   const [currentUser, setCurrentUser] = useState({});
@@ -54,7 +55,7 @@ export default function ApplicationViews() {
           <Route index element={<ActivateChat />} />
           <Route path="room" element={<ChatRoom />} />
         </Route>
-        <Route path="profile" element={<span>PROFILE: TODO</span>} />
+        <Route path="profile" element={<Profile currentUser={currentUser} />} />
       </Route>
     </Routes>
   );
