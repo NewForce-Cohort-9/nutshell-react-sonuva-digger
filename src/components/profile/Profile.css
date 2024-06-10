@@ -1,0 +1,10 @@
+.profile {
+    border: 5px solid cornsilk;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 60%;
+    text-align: center;
+    padding: 10rem;
+    background-color: aliceblue;
+    margin-top: 100px;
+  }
